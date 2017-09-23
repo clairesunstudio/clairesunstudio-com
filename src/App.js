@@ -1,38 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Gallery from './Gallery'
+import Search from './Search'
 import './App.css';
-import axios from 'axios'
+//import axios from 'axios'
+import * as sampleData from './sampleData.js';
 
+var data = sampleData.screens
     class App extends Component {
-      // constructor(props) {
-      //   super(props);
-      //   this.state = {
-      //     imgId: []
-      //   };
-      // }
-      // componentWillMount = () =>  {
-      //   this.fetchImages()
-      // };
-      // fetchImages = () =>  {
-      //   const _this = this
-      //     axios.get('images')
-      //       .then(function (response) {
-      //         const imgId = response.data
-      //         _this.setState({imgId})
-      //       })
-      //     .catch((error) => {console.log(error)})
-      // };
+      constructor(props) {
+        super(props);
+        this.state = {
+          data: sampleData.screens
+        };
+      }
+
+      onFilter = (event) => {
+        var search = new RegExp(event.target.value, 'i');
+        data = data.map(function(item){
+          const isMatched = !item.name.match(search);
+               if(!item.filtered || isMatched !== item.filtered) {
+                 return {
+                   ...item,
+                   filtered: isMatched
+                 }
+               }
+               return item;
+
+             });
+             this.setState({data})
+      };
+
       render() {
-        // const {imgId} = this.state
-        // let brakePoints = [350, 500, 750];
-        // let images = [];
-        // for(let i = 0; i< imgId.length; i++){
-        // 	images.push("images/" + imgId[i]);
-        // }
         return (
           <div className="container">
-              <Gallery />
+              <Search onFilter={this.onFilter} />
+              <Gallery data={this.state.data}/>
     			</div>
         );
       }
