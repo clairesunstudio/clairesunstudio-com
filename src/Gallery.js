@@ -14,7 +14,7 @@ class Gallery extends React.Component {
   render(){
     const {data} = this.props
     return (
-      <div className="demo">
+      <div className="gallery">
         <AbsoluteGrid items={data}
                                dragEnabled={false}
                                responsive={true}
