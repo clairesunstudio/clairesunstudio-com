@@ -1,0 +1,36 @@
+@import 'styles/_variables.scss';
+
+nav {
+  .navbar-brand {
+    font-size: $larger-font-size;
+    font-family: $font-style;
+  }
+	.navbar-toggle {margin: 13px 15px 13px 0;}
+}
+
+
+nav.navbar.navbar-fixed-top {
+	min-height: 35px;
+  .navbar-brand {font-size: $lead-font-size}
+  .navbar-toggle {
+    margin: 15px 15px 8px 0;
+    padding: 4px 5px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  nav{
+    .navbar-brand {
+      font-size: $large-font-size;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav{
+    .navbar-brand {
+      font-size: $title-font-size;
+    }
+  }
+}

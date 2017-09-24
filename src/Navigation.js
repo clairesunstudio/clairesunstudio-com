@@ -2,6 +2,7 @@ import React from 'react'
 import {Nav, Navbar} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import $ from 'jquery'
+import './Navigation.css'
 
 class Header extends React.Component {
 
@@ -15,12 +16,10 @@ class Header extends React.Component {
 
       handleScroll() {
       if ($(window).scrollTop() >=  50) {
-         $('nav').addClass('shrink');
         this.setState({
           fixedTop: true
         });
       } else {
-        $('nav').removeClass('shrink');
         this.setState({
           fixedTop: false
         });

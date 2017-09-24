@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header'
+import Navigation from './Navigation'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
@@ -21,7 +21,7 @@ import {
         return (
           <Router>
             <div className="wrapper">
-              <Header />
+              <Navigation />
                 <Switch>
                   <Route path={`/about`} component={About}/>
                   <Route path={`/contact`} component={Contact}/>
