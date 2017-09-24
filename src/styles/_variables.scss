@@ -1,7 +1,8 @@
 // Color
 $color-green:        #43956f;
-$color-blue:         #14558f;
+$color-blue:         #0D47A1;
 $color-yellow:       #f6c51b;
+$color-purple:       #4A148C;
 
 $color-gray-darker:          #263238;
 $color-gray-dark:            #455A64;
@@ -16,11 +17,11 @@ $color-green-alt:        rgba(#43956f,0.5);
 $color-blue-alt:         rgba(#14558f,0.5);
 $color-yellow-alt:       rgba(#f6c51b,0.5);
 
-@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Montserrat');
 // // Typography
-$font-sans:           "Monoton",'Helvetica Neue','Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+$font-sans:           'Montserrat','Helvetica Neue','Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 $font-serif:          "Roboto Slab", 'Merriweather', 'Georgia', 'Times New Roman', serif;
-$font-style:          "Monoton",'Helvetica Neue','Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+$font-style:          "Monoton",'Montserrat','Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 
 $em-base:             10px;
 $base-font-size:      1.8rem;

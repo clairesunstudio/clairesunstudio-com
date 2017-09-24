@@ -1,0 +1,9 @@
+@import "styles/_variables.scss";
+
+.content{
+  text-align: left;
+  h1{
+    font-family: $font-sans;
+    letter-spacing: 0;
+  }
+}

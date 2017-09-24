@@ -1,31 +1,21 @@
 import React from 'react'
+import { Col } from 'react-bootstrap'
 import './Header.css'
 
-class Header extends React.Component{
-  constructor(props) {
-    super(props);
-  }
-  render = () =>  {
-    const projectId = this.props.projectId
-    const itemStyle = {
-
-      //background: `linear-gradient(angle, rgba(#f6c51b,0.5)), url('images/${projectId}.jpg')`
-      //backgroundImage: `url('images/${projectId}.jpg')`
-    };
+const Header = ({title,subtitle}) => {
+  console.log(subtitle)
     return (
-      <header style={itemStyle}>
+      <header className="header-bar">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <h1>{this.props.projectId}</h1>
-              <h3></h3>
-            </div>
+            <Col md={8} className="content">
+              <h1>{title}</h1>
+              <h3>{subtitle}</h3>
+            </Col>
           </div>
         </div>
       </header>
-
     );
-  };
 }
 
 export default Header
