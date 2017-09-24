@@ -49,7 +49,6 @@ class Project extends React.Component{
     for(let i = 0; i< imgFeature.length; i++){
       features.push("projects/"+projectId+"/media/feature/" + imgFeature[i]);
     }
-    console.log(images)
     const {title, subtitle, sections, live_site} = content
     return (
         <div className="wrapper">
