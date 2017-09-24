@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Gallery from './Gallery'
 import Search from './Search'
-//import axios from 'axios'
+import './Home.css'
 import * as sampleData from './sampleData.js';
 
 
@@ -31,7 +31,7 @@ var data = sampleData.screens
       };
       render() {
         return (
-            <div>
+            <div className="home_gallery">
                 <Search onFilter={this.onFilter} />
                 <Gallery data={this.state.data}/>
             </div>
