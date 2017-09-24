@@ -5,7 +5,7 @@
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "The project consists of a LED installation constructed in two parts: In one part, about 60 to 100 LEDs are flickering simulating the fireflies. Sound and light sensors control the lightness of these “fireflies”. The second part of the installation consists of a water tank and approximately 15 LEDs that are floating on the water and producing the effect of the bioluminescence. The floating lights respong to movement, so that they light up when people stir the water. Also, as the people pick out the LEDs with hand, the lights fade away. Both of the pieces were installed in a dark space, in order to extentuate the lighting effect, and to greatly impress the natural ambience on the users."
+        "Exhibited at the Boston CyberArts Gallery at the Fresh Media Art Show, this installation is my final project from the MIT Media Lab sensor class. I recreated my personal experiences with bioluminescence organisms using Arduinos, LEDs, light and sound sensor to greatly impress the natural ambiance in a city setting. My skills crossing the disciplines of the art and technology, enabled me to conceptualize the design, devise the sensors, program the algorithm, leading up to the final fabrication, testing, and setup."
       ]
     },{ "section": "Background",
       "paragraphs": [

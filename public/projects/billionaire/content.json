@@ -1,6 +1,6 @@
 {
   "title": "IT Billionaires Map",
-  "subtitle":"An interactive data story on Massachusetts opioid epidemic",
+  "subtitle":"An interactive data visualization built with D3.js",
   "live_site": "http://clairesun.com/billionaires/",
   "sections": [
     { "section": "Overview",
