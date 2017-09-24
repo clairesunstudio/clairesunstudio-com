@@ -1,5 +1,6 @@
 import React from 'react'
-import {Nav, Navbar, NavItem} from 'react-bootstrap'
+import {Nav, Navbar} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import $ from 'jquery'
 
 class Header extends React.Component {
@@ -40,14 +41,14 @@ class Header extends React.Component {
       <Navbar collapseOnSelect fixedTop={fixedTop}>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">clairesunstudio</a>
+            <Link to="/">clairesunstudio</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#">About</NavItem>
-            <NavItem eventKey={2} href="#">Contact</NavItem>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
