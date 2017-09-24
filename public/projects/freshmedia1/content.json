@@ -1,0 +1,17 @@
+{
+  "title": "Artificial Bioluminescence",
+  "subtitle":"Fresh Media Part I",
+  "live_site": "",
+  "sections": [
+    { "section": "Overview",
+      "paragraphs": [
+        "The project consists of a LED installation constructed in two parts: In one part, about 60 to 100 LEDs are flickering simulating the fireflies. Sound and light sensors control the lightness of these “fireflies”. The second part of the installation consists of a water tank and approximately 15 LEDs that are floating on the water and producing the effect of the bioluminescence. The floating lights respong to movement, so that they light up when people stir the water. Also, as the people pick out the LEDs with hand, the lights fade away. Both of the pieces were installed in a dark space, in order to extentuate the lighting effect, and to greatly impress the natural ambience on the users."
+      ]
+    },{ "section": "Background",
+      "paragraphs": [
+        "Bioluminescence is magical to see – whether it’s a firefly winding through the night sky or a single-celled creature in the water agitated by the movements of your hands. It is a phenomenon unmatched by any artifacts and technologically impossible to attain currently.  It has intrigued me since an early age while I grew up in China. Being in a city I rarely saw the flash of a firefly. The illumination the fireflies used to hunt and mate was compromised by the artificial lights of the city. Therefore driving the fireflies away from me. Once, the city officials gathered thousands to let out in a park for many to see, only to receive darkness as the delicate fireflies did not light with the dense noises and camera flashes.",
+        "Fast forwarding years I was able to have a magical experience seeing dinoflagellates in the water off the coast of Puerto Rico. The costal water would illuminate with thousands of tiny lights as you swept anything into the water. As I kayaked along the coast, my oars would illuminate into magnificent glistening lights under the water. These spectacles inspired me to artificially create both fireflies and dinoflagellates using sensors for noise, movement, light and water. "
+      ]
+    }
+  ]
+}
