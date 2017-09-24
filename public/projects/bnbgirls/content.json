@@ -1,7 +1,7 @@
 {
-  "title": "Chapter55",
-  "subtitle":"An interactive data story on Massachusetts opioid epidemic",
-  "live_site":"http://www.mass.gov/chapter55/",
+  "title": "Bright & Beautiful Girls Web Narrative",
+  "subtitle":"A parallax narrative prototype built for non-profit organization Bright & Beautiful Girls",
+  "live_site":"http://clairesun.com/bnb/",
   "sections": [
     { "section": "Overview",
       "paragraphs": [

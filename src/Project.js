@@ -45,7 +45,7 @@ class Project extends React.Component{
     const {title, subtitle, sections} = content
     return (
         <div className="wrapper">
-          <Header title={title} subtitle={subtitle}/>
+          <Header title={title} subtitle={subtitle} live_site={live_site}/>
           <div className="container">
             <Content sections={sections}/>
             <Col md={8} className="media">

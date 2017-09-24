@@ -1,7 +1,7 @@
 {
-  "title": "Chapter55",
-  "subtitle":"An interactive data story on Massachusetts opioid epidemic",
-  "live_site":"http://www.mass.gov/chapter55/",
+  "title": "The Fashion of Hitchcock's 7 Leading Ladies",
+  "subtitle":"A data visualization prototype built with JS and CSS which is heavily inspired by 'Front Row to Fashion Week' by New York Times",
+  "live_site":"http://clairesun.com/fashion-viz/",
   "sections": [
     { "section": "Overview",
       "paragraphs": [

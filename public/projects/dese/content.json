@@ -1,7 +1,7 @@
 {
-  "title": "Chapter55",
-  "subtitle":"An interactive data story on Massachusetts opioid epidemic",
-  "live_site":"http://www.mass.gov/chapter55/",
+  "title": "The 'ABC' of High School Success",
+  "subtitle":"An interactive data story on high school success indicators designed and built for Massachusetts Department of Education and Secondary Education",
+  "live_site":"http://dese-hs-datastory.digital.mass.gov.s3-website-us-east-1.amazonaws.com/",
   "sections": [
     { "section": "Overview",
       "paragraphs": [
