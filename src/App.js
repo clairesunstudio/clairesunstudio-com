@@ -35,7 +35,7 @@ var data = sampleData.screens
         return (
           <div>
             <Header />
-            <div className="container">
+            <div>
                 <Search onFilter={this.onFilter} />
                 <Gallery data={this.state.data}/>
             </div>
