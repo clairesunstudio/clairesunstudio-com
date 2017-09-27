@@ -4,7 +4,7 @@ import './Media.css'
 
 
 const Media = ({images, features}) => {
-  console.log(images)
+  //console.log(images)
   const imageList = images.map((image, i) => (
     <Col md={6} key={`image_+${i}`}><img src={images[i]}/></Col>
   ))

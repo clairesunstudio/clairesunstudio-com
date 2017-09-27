@@ -11,8 +11,6 @@ class Project extends React.Component{
     super(props);
     this.state = {
       content: null,
-      imgId: [],
-      imgFeature: [],
       projectId: this.props.match.params.projectId
     }
   }
@@ -24,31 +22,26 @@ class Project extends React.Component{
     const projectId = _this.state.projectId
       axios.all([
         axios.get('projects/'+projectId+'/content.json'),
-        axios.get('projects/'+projectId+'/media'),
-        axios.get('projects/'+projectId+'/media/feature')
       ])
-      .then(axios.spread(function(result, media, feature) {
+      .then(axios.spread(function(result) {
           const content = result.data
-          const imgId = media.data
-          const imgFeature = feature.data
-          _this.setState({imgId, content, imgFeature})
+          _this.setState({content})
         }))
       .catch((error) => {console.log(error)})
   };
   render(){
-    const {imgId, content, imgFeature, projectId} = this.state
+    const {content, projectId} = this.state
     if( !content ) {
       return <div className="container">Loading...</div>
     }
-    let images = [], features = [];
-    for(let i = 0; i< imgId.length; i++){
-      if(imgId[i] != 'feature'){
-        images.push("projects/"+projectId+"/media/" + imgId[i]);
-      }
+     let images = [], features = [];
+    for(let i = 0; i< 5; i++){
+        images.push(`projects/${projectId}/media/${i}.jpg`);
     }
-    for(let i = 0; i< imgFeature.length; i++){
-      features.push("projects/"+projectId+"/media/feature/" + imgFeature[i]);
+    for(let i = 0; i< 2; i++){
+      features.push(`projects/${projectId}/media/feature/${i}.gif`);
     }
+    console.log(images)
     const {title, subtitle, sections, live_site} = content
     return (
         <div className="wrapper">
