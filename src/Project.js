@@ -5,6 +5,7 @@ import Media from './project/Media'
 import axios from 'axios'
 import { Col } from 'react-bootstrap'
 import './Project.css'
+import _ from 'lodash'
 
 
 var api_key = 'AIzaSyAmfapkMCz0yqdNRG1lUNSWErt6Ir_WTTI';
@@ -16,6 +17,7 @@ class Project extends React.Component{
     super(props);
     this.state = {
       content: null,
+      fileList: null,
       projectId: this.props.match.params.projectId
     }
   }
@@ -30,18 +32,21 @@ class Project extends React.Component{
         axios.get(url),
       ])
       .then(axios.spread(function(result, google) {
-                console.log(google.data)
+          const fileList = google.data.files
           const content = result.data
-          _this.setState({content})
+          _this.setState({content, fileList})
         }))
       .catch((error) => {console.log(error)})
   };
   render(){
-    const {content, projectId} = this.state
+    const {content, projectId, fileList} = this.state
     if( !content ) {
       return <div className="container">Loading...</div>
     }
     const {title, subtitle, sections, live_site} = content
+    console.log(fileList)
+    const fileNameList = _.mapKeys(fileList, "name")
+    console.log(fileNameList[projectId].id)
     return (
         <div className="wrapper">
           <Header title={title} subtitle={subtitle} live_site={live_site}/>
