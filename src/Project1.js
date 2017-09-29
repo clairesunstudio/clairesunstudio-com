@@ -6,11 +6,6 @@ import axios from 'axios'
 import { Col } from 'react-bootstrap'
 import './Project.css'
 
-
-var api_key = 'AIzaSyAmfapkMCz0yqdNRG1lUNSWErt6Ir_WTTI';
-var folderId = '0B5Upqv95GKbfVzRpMENZLUo1U1k';
-var url = "https://www.googleapis.com/drive/v3/files?q='" + folderId + "'+in+parents&key=" + api_key;
-
 class Project extends React.Component{
   constructor(props) {
     super(props);
@@ -27,10 +22,8 @@ class Project extends React.Component{
     const projectId = _this.state.projectId
       axios.all([
         axios.get('projects/'+projectId+'/content.json'),
-        axios.get(url),
       ])
-      .then(axios.spread(function(result, google) {
-                console.log(google.data)
+      .then(axios.spread(function(result) {
           const content = result.data
           _this.setState({content})
         }))
@@ -41,12 +34,21 @@ class Project extends React.Component{
     if( !content ) {
       return <div className="container">Loading...</div>
     }
+     let images = [], features = [];
+    for(let i = 0; i< 5; i++){
+        images.push(`projects/${projectId}/media/${i}.jpg`);
+    }
+    for(let i = 0; i< 2; i++){
+      features.push(`projects/${projectId}/media/feature/${i}.gif`);
+    }
+    console.log(images)
     const {title, subtitle, sections, live_site} = content
     return (
         <div className="wrapper">
           <Header title={title} subtitle={subtitle} live_site={live_site}/>
           <div className="container">
             <Content sections={sections}/>
+            <Media images={images} features={features}/>
           </div>
         </div>
     )
