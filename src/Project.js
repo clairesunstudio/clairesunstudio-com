@@ -6,19 +6,20 @@ import axios from 'axios'
 import { Col } from 'react-bootstrap'
 import './Project.css'
 import _ from 'lodash'
-
-
-var api_key = 'AIzaSyAmfapkMCz0yqdNRG1lUNSWErt6Ir_WTTI';
-var folderId = '0B5Upqv95GKbfVzRpMENZLUo1U1k';
-var url = "https://www.googleapis.com/drive/v3/files?q='" + folderId + "'+in+parents&key=" + api_key;
+import { api_key } from './App'
 
 class Project extends React.Component{
   constructor(props) {
     super(props);
+    const fileNameList = this.props.fileNameList
+    const folderNameList = _.keysIn(fileNameList)
+    const projectId = this.props.match.params.projectId
+    const projectFolderId = fileNameList[projectId].id
+    const url = `https://www.googleapis.com/drive/v3/files?q='${projectFolderId}'+in+parents&key=${api_key}`;
     this.state = {
       content: null,
-      fileList: null,
-      projectId: this.props.match.params.projectId
+      fileNameList: null,
+      projectId, url
     }
   }
   componentWillMount = () =>  {
@@ -26,32 +27,33 @@ class Project extends React.Component{
   };
   fetchImages = () =>  {
     const _this = this
-    const projectId = _this.state.projectId
+    const { projectId, url} = _this.state
       axios.all([
         axios.get('projects/'+projectId+'/content.json'),
         axios.get(url),
       ])
       .then(axios.spread(function(result, google) {
           const fileList = google.data.files
+          const fileNameList = _.mapKeys(fileList, "name")
           const content = result.data
-          _this.setState({content, fileList})
+          _this.setState({content, fileNameList})
         }))
       .catch((error) => {console.log(error)})
   };
   render(){
-    const {content, projectId, fileList} = this.state
+    const {content, projectId, fileNameList} = this.state
     if( !content ) {
       return <div className="container">Loading...</div>
     }
     const {title, subtitle, sections, live_site} = content
-    console.log(fileList)
-    const fileNameList = _.mapKeys(fileList, "name")
-    console.log(fileNameList[projectId].id)
+    const mediaFolderId = fileNameList.media.id
+    console.log(mediaFolderId)
     return (
         <div className="wrapper">
           <Header title={title} subtitle={subtitle} live_site={live_site}/>
           <div className="container">
-            <Content sections={sections}/>
+            <Content sections={sections} mediaFolderId={mediaFolderId}/>
+            <Media mediaFolderId={mediaFolderId}/>
           </div>
         </div>
     )
