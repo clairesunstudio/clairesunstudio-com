@@ -3,51 +3,58 @@ import Header from './project/Header'
 import Content from './project/Content'
 import Media from './project/Media'
 import axios from 'axios'
+import _ from 'lodash'
 import { Col } from 'react-bootstrap'
 import './Project.css'
 
 class Project extends React.Component{
   constructor(props) {
     super(props);
+    const projectId = this.props.match.params.projectId
+    const projectData = _.mapKeys(this.props.projectData[projectId].contents, "name")
+    const projectMedia = projectData.media.contents
     this.state = {
       content: null,
-      imgId: [],
-      imgFeature: [],
-      projectId: this.props.match.params.projectId
+      imageList: [],
+      featureImageList: [],
+      projectId,
+      projectMedia
     }
   }
   componentWillMount = () =>  {
-    this.fetchImages()
+    this.fetchFiles()
   };
-  fetchImages = () =>  {
+  fetchFiles = () =>  {
     const _this = this
-    const projectId = _this.state.projectId
+    const {projectId, projectMedia} = _this.state
+    const images = _.filter(projectMedia, { 'type': 'file'});
+    const feature = _.filter(projectMedia, { 'type': 'directory', 'name': 'feature'})
+    const featureImages = feature[0].contents
+    const imageList = _.keysIn(_.mapKeys(images, 'name'))
+    const featureImageList = _.keysIn(_.mapKeys(featureImages, 'name'))
+    console.log(imageList, featureImageList)
       axios.all([
         axios.get('projects/'+projectId+'/content.json'),
-        axios.get('projects/'+projectId+'/media'),
-        axios.get('projects/'+projectId+'/media/feature')
       ])
-      .then(axios.spread(function(result, media, feature) {
+      .then(axios.spread(function(result) {
           const content = result.data
-          const imgId = media.data
-          const imgFeature = feature.data
-          _this.setState({imgId, content, imgFeature})
+          _this.setState({content, imageList, featureImageList})
         }))
       .catch((error) => {console.log(error)})
   };
   render(){
-    const {imgId, content, imgFeature, projectId} = this.state
+    const {imageList, content, featureImageList, projectId} = this.state
     if( !content ) {
       return <div className="container">Loading...</div>
     }
     let images = [], features = [];
-    for(let i = 0; i< imgId.length; i++){
-      if(imgId[i] != 'feature'){
-        images.push("projects/"+projectId+"/media/" + imgId[i]);
+    for(let i = 0; i< imageList.length; i++){
+      if(imageList[i] != 'feature'){
+        images.push("projects/"+projectId+"/media/" + imageList[i]);
       }
     }
-    for(let i = 0; i< imgFeature.length; i++){
-      features.push("projects/"+projectId+"/media/feature/" + imgFeature[i]);
+    for(let i = 0; i< featureImageList.length; i++){
+      features.push("projects/"+projectId+"/media/feature/" + featureImageList[i]);
     }
     const {title, subtitle, sections, live_site} = content
     return (
