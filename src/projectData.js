@@ -1,5 +1,5 @@
-module.exports = [
-  {"type":"directory","name":"public/projects","contents":[
+module.exports =
+[{"type":"directory","name": ".","contents":[
     {"type":"directory","name":"billionaire","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
@@ -79,12 +79,18 @@ module.exports = [
     {"type":"directory","name":"map","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
-        {"type":"file","name":"fashion_ui.png"},
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"fashion_modal-ui.png"}
-        ]}
+          {"type":"file","name":"map_design.jpg"}
+        ]},
+        {"type":"file","name":"map.jpg"},
+        {"type":"file","name":"map_cover.jpg"},
+        {"type":"file","name":"map_inner.jpg"},
+        {"type":"file","name":"map_open.jpg"},
+        {"type":"file","name":"map_user0.jpg"},
+        {"type":"file","name":"map_user1.jpg"},
+        {"type":"file","name":"map_user2.jpg"}
       ]}
     ]}
   ]},
-  {"type":"report","directories":27,"files":31}
+  {"type":"report","directories":27,"files":37}
 ]
