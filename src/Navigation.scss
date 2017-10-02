@@ -2,40 +2,61 @@
 
 nav.navbar {
     min-height: 50px;
-    margin: 0;
     border-radius: 0;
     border: 1px solid transparent;
     .navbar-brand {
       font-size: $larger-font-size;
       font-family: $font-style;
+      transition: all 0.3s;
     }
-    .navbar-toggle {margin: 13px 15px 13px 0;}
+    li{
+      display: inline-block;
+    }
 }
 
 
 nav.navbar.navbar-fixed-top {
-  margin: 0 auto;
 	height: 35px;
-  .navbar-brand {font-size: $lead-font-size}
-  .navbar-toggle {
-    margin: 15px 15px 8px 0;
-    padding: 4px 5px;
+  .navbar-brand {
+    font-size: $lead-font-size;
+    float: left;
   }
 }
-
 
 @media screen and (max-width: 767px) {
-  nav{
+  .container{
+    .navbar-header{
+      margin-top: 1.2em;
+    }
+  }
+  nav.navbar{
     .navbar-brand {
-      font-size: $large-font-size;
+      font-size: 2em;
+      float: none;
+    }
+  }
+  nav.navbar.navbar-fixed-top {
+    .container{
+      .navbar-header{
+        float:left;
+        display: inline-block;
+      }
+    }
+    .navbar-brand {
+      font-size: $lead-font-size;
+      float: left;
+      padding: 0 15px;
+    }
+    .navbar-nav{
+      float: right;
     }
   }
 }
 
-@media screen and (max-width: 600px) {
-  nav{
-    .navbar-brand {
-      font-size: $title-font-size;
-    }
-  }
-}
+// @media screen and (max-width: 600px) {
+//   nav{
+//     .navbar-brand {
+//       font-size: 1em;
+//     }
+//   }
+// }
