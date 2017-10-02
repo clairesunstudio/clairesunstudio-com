@@ -38,6 +38,14 @@ module.exports = [
         ]}
       ]}
     ]},
+    {"type":"directory","name":"facebookfan","contents":[
+      {"type":"file","name":"content.json"},
+      {"type":"directory","name":"media","contents":[
+        {"type":"directory","name":"video","contents":[
+          {"type":"file","name":"FacebookFan.mp4"}
+        ]}
+      ]}
+    ]},
     {"type":"directory","name":"fashion","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
@@ -78,5 +86,5 @@ module.exports = [
       ]}
     ]}
   ]},
-  {"type":"report","directories":24,"files":29}
+  {"type":"report","directories":27,"files":31}
 ]
