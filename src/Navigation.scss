@@ -53,10 +53,10 @@ nav.navbar.navbar-fixed-top {
   }
 }
 
-// @media screen and (max-width: 600px) {
-//   nav{
-//     .navbar-brand {
-//       font-size: 1em;
-//     }
-//   }
-// }
+@media screen and (max-width: 600px) {
+  nav.navbar{
+    .navbar-brand {
+      font-size: 1em;
+    }
+  }
+}
