@@ -9,7 +9,8 @@ class Header extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        fixedTop: false
+        fixedTop: false,
+        brandName: 'clairesunstudio'
       };
       this.handleScroll = this.handleScroll.bind(this);
     }
@@ -17,11 +18,13 @@ class Header extends React.Component {
       handleScroll() {
       if ($(window).scrollTop() >=  50) {
         this.setState({
-          fixedTop: true
+          fixedTop: true,
+          brandName: 'css'
         });
       } else {
         this.setState({
-          fixedTop: false
+          fixedTop: false,
+          brandName: 'clairesunstudio'
         });
       }
     }
@@ -35,21 +38,18 @@ class Header extends React.Component {
     }
 
   render(){
-    const {fixedTop} = this.state
+    const {fixedTop, brandName} = this.state
     return(
       <Navbar collapseOnSelect fixedTop={fixedTop}>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">clairesunstudio</Link>
+            <Link to="/">{brandName}</Link>
           </Navbar.Brand>
-          <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse>
           <Nav pullRight>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </Nav>
-        </Navbar.Collapse>
       </Navbar>
     )
   }
