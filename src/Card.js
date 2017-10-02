@@ -11,9 +11,8 @@ export default class Card extends React.Component {
     const itemStyle = {
       backgroundImage: `url('images/${url}.jpg')`
     };
-    return <div style={itemStyle} className="gridItem">
+    return <div style={itemStyle} className="gridItem col-xs-12 col-sm-6 col-md-4">
               <div className="gridItem__cover">
-
                 <div className="gridItem__cover-content">
                   <h3>{name}</h3>
                   <hr />
