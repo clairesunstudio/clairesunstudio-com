@@ -26,7 +26,7 @@ import * as projectData from './projectData.js';
       const { data } = this.state
         return (
           <Router>
-            <div className="wrapper">
+            <div>
               <Navigation />
                 <Switch>
                   <Route path={`/about`} component={About}/>
