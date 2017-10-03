@@ -24,3 +24,60 @@ h1{
   margin: 20px auto;
   box-sizing: border-box;
 }
+
+* {
+    transition: 0.5s ease-in-out all;
+}
+
+
+.photo-container {
+    margin: 10px;
+    position:relative;
+    animation: fadeUP .5s;
+}
+.photo-container img {
+    max-width: 100%;
+}
+
+@keyframes fadeUP {
+    from {top: -40px; opacity:0;}
+    to {top: 0; opacity:1}
+}
+
+.filter-panel {
+    display: flex;
+    background: #F8F8F8;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.085);
+}
+
+.filter-panel a {
+    display: inline-block;
+    background: #B677B4;
+    position: relative;
+    padding: 10px 25px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid #BB00FF;
+    margin: 5px 15px;
+    transition: .25s ease-in;
+    border-radius: 4px;
+    font-family: 'Segoe UI','Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.filter-panel a:hover {
+    background: #B25DB0;
+}
+
+.filter-panel a.active {
+    top:-8px;
+}
+
+.filter-panel a.resetBtn {background: #E55E5C;}
+
+.filter-panel a.resetBtn:hover {
+    background: #D34A48;
+}
