@@ -32,9 +32,9 @@ class Gallery extends React.Component{
   render() {
     return (
       <div className="demo">
-        <button onClick={() => this.filterChildren}>Filter</button>
-        <Shuffle duration={300} fade={false}>
-          {this.props.data.map(function(item, i){
+        <button onClick={this.filterChildren.bind(this)}>Filter</button>
+        <Shuffle duration={500} fade={false} scale={true}>
+          {this.state.data.map(function(item, i){
             return (
               <div className="tile" key={`card${i}`}><Card item={item}/></div>
             )
