@@ -1,28 +1,46 @@
 import React from 'react';
-import createAbsoluteGrid from 'react-absolute-grid';
 import Card from './Card';
 import './Gallery.css'
+import Shuffle from 'react-shuffle';
 
-// Pass your display component to create a new grid
-const AbsoluteGrid = createAbsoluteGrid(Card);
-
-class Gallery extends React.Component {
-  constructor(props) {
-    super(props);
+class Gallery extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			data: this.props.data,
+			filtered: false
+		}
+	}
+  filterChildren() {
+    if (this.state.filtered === false) {
+      let newData = this.state.data.filter(function(data,index){
+        if (index % 2 ===0) {
+          return data
+        }
+      });
+      this.setState({
+        data: newData,
+        filtered: true
+      });
+    } else {
+      this.setState({
+        data: this.props.data,
+        filtered: false
+      });
+    }
   }
-
-  render(){
-    const {data} = this.props
+  render() {
     return (
-      <div className="gallery">
-        <AbsoluteGrid items={data}
-                               dragEnabled={false}
-                               responsive={true}
-                               verticalMargin={42}
-                               itemWidth={400}
-                               itemHeight={200}/>
+      <div className="demo">
+        <button onClick={() => this.filterChildren}>Filter</button>
+        <Shuffle duration={300} fade={false}>
+          {this.state.data.map(function(item, i){
+            return (
+              <div className="tile" key={`card${i}`}><Card item={item}/></div>
+            )
+          })}
+        </Shuffle>
       </div>
-
     )
   }
 }
