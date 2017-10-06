@@ -1,5 +1,5 @@
-module.exports = {
-  screens: [
+module.exports =
+  [
     {'url': 'billionaire', 'name': 'billionaire', 'sort': 1, 'key': 1, 'description': 'An interactive data visualization built with D3.js' },
     {'url': 'chapter55', 'name': 'chapter55', 'sort': 2, 'key': 2, 'description': 'An interative data story built for Massachusetts Department of Public Health on the opioid epidemic'},
     {'url': 'dese', 'name': 'High School Success Data Story', 'sort': 3, 'key': 3, 'description': 'An interactive data visualization built with D3.js'},
@@ -10,4 +10,3 @@ module.exports = {
     {'url': 'bnbgirls', 'name': 'bnbgirls', 'sort': 7, 'key': 8, 'description': 'An interactive data visualization built with D3.js'},
     {'url': 'facebookfan', 'name': 'The Facebook Fan', 'sort': 7, 'key': 9, 'description': 'An interactive data visualization built with D3.js'}
    ]
-  }
