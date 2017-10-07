@@ -9,11 +9,12 @@ import _ from 'lodash'
       constructor(props) {
         super(props);
         this.state = {
-          data: homeData
+          data: homeData,
+          filtered: false
         };
       }
 
-      onFilter = (event) => {
+      onSearch = (event) => {
         const value = event.target.value
         var search = new RegExp(value, 'i');
         if(value){
@@ -34,10 +35,29 @@ import _ from 'lodash'
         }
 
       };
+      onFilter() {
+        if (this.state.filtered === false) {
+          let newData = this.state.data.filter(function(data,index){
+            if (index % 2 ===0) {
+              return data
+            }
+          });
+          this.setState({
+            data: newData,
+            filtered: true
+          });
+        } else {
+          this.setState({
+            data: this.props.data,
+            filtered: false
+          });
+        }
+      }
       render() {
         return (
             <div className="home_gallery">
-                <Search onFilter={this.onFilter} />
+                <Search onSearch={this.onSearch} />
+                <button onClick={this.onFilter.bind(this)}>Filter</button>
                 <Gallery data={this.state.data}/>
             </div>
         );
