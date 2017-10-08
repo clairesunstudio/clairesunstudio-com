@@ -4,6 +4,7 @@ import Search from './Search'
 import './Home.css'
 import * as homeData from './homeData.js';
 import _ from 'lodash'
+import FilterPanel from './FilterPanel'
 
     class Home extends Component {
       constructor(props) {
@@ -34,7 +35,23 @@ import _ from 'lodash'
           this.setState({data: homeData})
         }
 
-      };
+      }
+      selectCategory(element){
+          var categoryName = element;
+        console.log('category is: '+ categoryName);
+                    var displayedCategories = this.props.data.filter(function(el) {
+
+                        var searchValue = el.category;
+                        return searchValue.indexOf(categoryName) !== -1;
+                        console.log(searchValue);
+                    });
+
+                    this.setState({
+                        displayedCategories
+
+                    });
+
+      }
       onFilter() {
         if (this.state.filtered === false) {
           let newData = this.state.data.filter(function(data,index){
@@ -57,7 +74,8 @@ import _ from 'lodash'
         return (
             <div className="home_gallery">
                 <Search onSearch={this.onSearch} />
-                <button onClick={this.onFilter.bind(this)}>Filter</button>
+                <button onClick={this.onFilter.bind(this)}>React</button>
+                <FilterPanel data={this.state.data} selectCategory={this.selectCategory}/>
                 <Gallery data={this.state.data}/>
             </div>
         );
