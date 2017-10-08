@@ -52,10 +52,11 @@ import FilterPanel from './FilterPanel'
                     });
 
       }
-      onFilter() {
+      onFilter(e) {
+        const filterValue = e.target.getAttribute('value')
         if (this.state.filtered === false) {
           let newData = this.state.data.filter(function(data,index){
-            if (index % 2 ===0) {
+            if (data.category.indexOf(filterValue) !== -1) {
               return data
             }
           });
@@ -74,8 +75,7 @@ import FilterPanel from './FilterPanel'
         return (
             <div className="home_gallery">
                 <Search onSearch={this.onSearch} />
-                <button onClick={this.onFilter.bind(this)}>React</button>
-                <FilterPanel data={this.state.data} selectCategory={this.selectCategory}/>
+                <FilterPanel data={this.state.data} selectCategory={this.selectCategory} onFilter={this.onFilter.bind(this)}/>
                 <Gallery data={this.state.data}/>
             </div>
         );

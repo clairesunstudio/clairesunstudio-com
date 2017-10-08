@@ -6,7 +6,7 @@ class Filter extends React.Component{
 
   render(){
     return (
-      <Button onClick={this.props.onClick}>{this.props.category}</Button>
+      <Button onClick={this.props.onClick} value={this.props.category}>{this.props.category}</Button>
     )
   }
 
@@ -15,26 +15,31 @@ class Filter extends React.Component{
 class FilterPanel extends React.Component{
   constructor(props){
 		super(props);
+    this.state = {
+      uniqueCategories: []
+    }
 	}
   //var buttonClass = this.state.active ? 'active' : '';
-
-  render(){
-    const { selectCategory, data } = this.props
-    var categoryToSelect = selectCategory;
-    var getUniqueCategories=[];
-    data.forEach((el)=>{
+  componentDidMount(){
+    var uniqueCategories=[];
+    this.props.data.forEach((el)=>{
       const category = el.category
       for(var i=0; i<category.length; i++){
-        if(getUniqueCategories.indexOf(category[i]) === -1 ) getUniqueCategories.push(el.category[i]);
+        if(uniqueCategories.indexOf(category[i]) === -1 ) uniqueCategories.push(el.category[i]);
       }
     })
+    this.setState({uniqueCategories})
+  }
+  render(){
+    const { selectCategory, onFilter } = this.props
+    var categoryToSelect = selectCategory;
     return (
       <div className="filter-panel">
         {
-          getUniqueCategories.map(function(el,i){
+          this.state.uniqueCategories.map(function(el,i){
             var boundClick = categoryToSelect.bind(null,el);
-            console.log(boundClick)
-            return <Filter onClick={boundClick} category={el} key={i} />
+            console.log(el)
+            return <Filter onClick={boundClick, onFilter} category={el} key={i} />
           })
 
         }
