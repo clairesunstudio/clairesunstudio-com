@@ -1,0 +1,11 @@
+@import './styles/_variables.scss';
+
+.btn {
+  font-family: $font-sans;
+  background-color: $color-black;
+  color: $color-white;
+  &:hover, &:focus, &:active, &.active{
+    background-color: $color-pink;
+    color: $color-white;
+  }
+}

@@ -1,6 +1,6 @@
 module.exports =
   [
-    {'url': 'billionaire', 'name': 'billionaire', 'sort': 1, 'key': 1, 'description': 'An interactive data visualization built with D3.js', 'category': ['react','dev']},
+    {'url': 'billionaire', 'name': 'billionaire', 'sort': 1, 'key': 1, 'description': 'An interactive data visualization built with D3.js', 'category': ['react','dev', 'social media']},
     {'url': 'chapter55', 'name': 'chapter55', 'sort': 2, 'key': 2, 'description': 'An interative data story built for Massachusetts Department of Public Health on the opioid epidemic', 'category': ['design']},
     {'url': 'dese', 'name': 'High School Success Data Story', 'sort': 3, 'key': 3, 'description': 'An interactive data visualization built with D3.js', 'category': ['design']},
     {'url': 'fashion', 'name': 'fashion', 'sort': 4, 'key': 4, 'description': 'An interactive data visualization built with D3.js', 'category': ['design']},

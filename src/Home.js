@@ -39,7 +39,7 @@ import FilterPanel from './FilterPanel'
       selectCategory(element){
           var categoryName = element;
         console.log('category is: '+ categoryName);
-                    var displayedCategories = this.props.data.filter(function(el) {
+                    var displayedCategories = this.state.data.filter(function(el) {
 
                         var searchValue = el.category;
                         return searchValue.indexOf(categoryName) !== -1;
@@ -55,7 +55,7 @@ import FilterPanel from './FilterPanel'
       onFilter(e) {
         const filterValue = e.target.getAttribute('value')
         if (this.state.filtered === false) {
-          let newData = this.state.data.filter(function(data,index){
+          let newData = homeData.filter(function(data,index){
             if (data.category.indexOf(filterValue) !== -1) {
               return data
             }
@@ -66,16 +66,21 @@ import FilterPanel from './FilterPanel'
           });
         } else {
           this.setState({
-            data: this.props.data,
+            data: homeData,
             filtered: false
           });
         }
       }
+      resetFilter(e){
+        console.log('clear')
+      this.setState({ data: homeData })
+      }
       render() {
+        //console.log(this.state.data)
         return (
             <div className="home_gallery">
                 <Search onSearch={this.onSearch} />
-                <FilterPanel data={this.state.data} selectCategory={this.selectCategory} onFilter={this.onFilter.bind(this)}/>
+                <FilterPanel data={this.state.data} selectCategory={this.selectCategory.bind(this)} onFilter={this.onFilter.bind(this)} resetFilter={this.resetFilter.bind(this)}/>
                 <Gallery data={this.state.data}/>
             </div>
         );

@@ -1,12 +1,20 @@
 import React from 'react'
-import './Search.css'
+import './FilterPanel.css'
 import { Button } from 'react-bootstrap'
 
-class Filter extends React.Component{
+const upperCaseFirstChar = (string) => {
+    const words  = string.split(' ')
+    var newString = words.map((word)=>{
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    return newString.join(' ')
 
+}
+
+class Filter extends React.Component{
   render(){
     return (
-      <Button onClick={this.props.onClick} value={this.props.category}>{this.props.category}</Button>
+      <Button onClick={this.props.onClick} value={this.props.category}>{upperCaseFirstChar(this.props.category)}</Button>
     )
   }
 
@@ -35,13 +43,12 @@ class FilterPanel extends React.Component{
     var categoryToSelect = selectCategory;
     return (
       <div className="filter-panel">
+      <Button onClick={this.props.resetFilter}>All</Button>
         {
           this.state.uniqueCategories.map(function(el,i){
             var boundClick = categoryToSelect.bind(null,el);
-            console.log(el)
             return <Filter onClick={boundClick, onFilter} category={el} key={i} />
           })
-
         }
       </div>
     )
