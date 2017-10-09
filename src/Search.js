@@ -9,7 +9,7 @@ class Search extends React.Component {
   render(){
     const {onSearch} = this.props
     return(
-      <input placeholder='Search project' onChange={onSearch} type='text'/>
+      <input placeholder='Search by name' onChange={onSearch} type='text'/>
     )
   }
 }

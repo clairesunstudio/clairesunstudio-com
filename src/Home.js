@@ -5,6 +5,7 @@ import './Home.css'
 import * as homeData from './Data/homeData.js';
 import _ from 'lodash'
 import FilterPanel from './FilterPanel'
+import { Col } from 'react-bootstrap'
 
     class Home extends Component {
       constructor(props) {
@@ -79,8 +80,16 @@ import FilterPanel from './FilterPanel'
         //console.log(this.state.data)
         return (
             <div className="home_gallery">
-                <Search onSearch={this.onSearch} />
+            <div className="container">
+              <div className="row">
+                <Col md={10}>
                 <FilterPanel data={this.state.data} selectCategory={this.selectCategory.bind(this)} onFilter={this.onFilter.bind(this)} resetFilter={this.resetFilter.bind(this)}/>
+                </Col>
+                <Col md={2}>
+                <Search onSearch={this.onSearch} />
+                </Col>
+                </div>
+            </div>
                 <Gallery data={this.state.data}/>
             </div>
         );

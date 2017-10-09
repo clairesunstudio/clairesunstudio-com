@@ -1,5 +1,8 @@
 @import './styles/_variables.scss';
 
+.filter-panel{
+  text-align: left;
+}
 .btn {
   font-family: $font-sans;
   background-color: $color-black;
