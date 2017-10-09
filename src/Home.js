@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Gallery from './Gallery'
 import Search from './Search'
 import './Home.css'
-import * as homeData from './homeData.js';
+import * as homeData from './Data/homeData.js';
 import _ from 'lodash'
 import FilterPanel from './FilterPanel'
 

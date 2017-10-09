@@ -11,7 +11,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import * as projectData from './projectData.js';
+import * as projectData from './Data/projectData.js';
 
     class App extends Component {
       constructor(props) {
