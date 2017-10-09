@@ -11,18 +11,18 @@ class Gallery extends React.Component{
 		if(window.innerWidth>420){
 			var marginLeft = window.innerWidth%370/2
 			var itemStyle = {
-				marginLeft: `${marginLeft}`
+				marginLeft: `${marginLeft}px`
 			};
 			window.addEventListener("resize", ()=>{
 				marginLeft = (window.innerWidth-marginLeft*2)%370/2
 				console.log(window.innerWidth/370)
 				itemStyle = {
-					marginLeft: `${marginLeft}`
+					marginLeft: `${marginLeft}px`
 				};
 			});
 		}else{
 			var itemStyle = {
-				marginLeft: 0
+				marginLeft: '0px'
 			};
 		}
     return (
