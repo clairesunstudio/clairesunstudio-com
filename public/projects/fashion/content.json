@@ -1,11 +1,11 @@
 {
   "title": "The Fashion of Hitchcock's 7 Leading Ladies",
-  "subtitle":"A data visualization prototype built with JS and CSS which is heavily inspired by 'Front Row to Fashion Week' by New York Times",
+  "subtitle":"Proof of concept prototype for visualizing fashion in classic movies",
   "live_site":"http://clairesun.com/fashion-viz/",
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "As part of a multi-faceted effort to combat the opioid epidemic, Chapter 55 of the Acts of 2015 was passed by the Legislature and signed into law by Governor Baker. MassIT worked closely with DPH on visualizing the datasets and created an interactive data story to engage the public on this subject. As the designer and developer of this project, I worked closely with the data team from concept sketching, designing data visualizations, prototyping, developing into the final deployment and performance analytics."
+        "Heavily inspired by Mike Bostock's visualization of the 2014 fall fashion week. I recreated a similar concept prototype using plain CSS and Javascript without D3. Using photos from various classic Alfred Hitchcock movies I assembled a working prototype that allows users to visualize and explore fashions from the leading ladies. Grace Kelly, Tippi Hedren, Janet Leigh, Joan Fontaine, Kim Novak and others are all featured in this site. Users can explore each article of clothing and see visual representations of the complete outfits."
       ]
     }
   ]
