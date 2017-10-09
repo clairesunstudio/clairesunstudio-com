@@ -14,16 +14,33 @@ h1{
 * {
   box-sizing: border-box;
 }
+
+@mixin clearfix {
+  clear: both;
+  &::after {
+    content: '';
+    display: table;
+  }
+}
+
 .tile {
-  display: block;
+  display: inline-block;
   float: left;
-  width: 400px;
+  width: 350px;
   height: 200px;
   margin: 10px;
 }
 
-.demo {
-  width: 96%;
+.gallery {
   margin: 0 auto;
   position: relative;
+  @include clearfix;
+}
+
+@media screen and (max-width: 420px){
+  .tile {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
 }
