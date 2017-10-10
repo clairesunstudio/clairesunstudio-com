@@ -18,6 +18,8 @@
         text-transform: capitalize;
         font-weight: $font-bold;
         margin: 5px auto;
+        border-bottom: 1px solid $color-white;
+        padding-bottom: 5px;
        }
        p{
         font-size:$regular-font-size;

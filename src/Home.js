@@ -80,7 +80,7 @@ import { Col } from 'react-bootstrap'
         //console.log(this.state.data)
         return (
             <div className="home_gallery">
-            <div className="container">
+            <div className="controls container">
               <div className="row">
                 <Col md={10}>
                 <FilterPanel data={this.state.data} selectCategory={this.selectCategory.bind(this)} onFilter={this.onFilter.bind(this)} resetFilter={this.resetFilter.bind(this)}/>
