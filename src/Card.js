@@ -3,10 +3,12 @@ import './Card.css'
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 //import './scripts/fixWidows'
+import touchDevice from './scripts/touchDevice'
 
 export default class Card extends React.Component {
 
   render() {
+    touchDevice(window);
     const {url, name, description} = this.props.item
     const itemStyle = {
       backgroundImage: `url('images/${url}.jpg')`
