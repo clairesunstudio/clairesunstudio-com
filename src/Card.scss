@@ -30,7 +30,7 @@
        }
      }
    }
-  .no-touch &:hover, &.hover {
+  &:hover, &.hover {
    box-shadow: 0 0 3em 0 rgba($color-gray,.7);
    filter: grayscale(100%);
    .gridItem__cover {
