@@ -1,7 +1,7 @@
 {
   "title": "The Fashion of Hitchcock's 7 Leading Ladies",
   "subtitle":"Proof of concept prototype for visualizing fashion in classic movies",
-  "live_site":"http://clairesun.com/fashion-viz/",
+  "live_site":"http://clairesunstudio.github.io/fashion-viz/",
   "sections": [
     { "section": "Overview",
       "paragraphs": [

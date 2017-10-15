@@ -1,7 +1,7 @@
 {
   "title": "IT Billionaires Map",
   "subtitle":"An interactive data visualization built with D3.js",
-  "live_site": "http://clairesun.com/billionaires/",
+  "live_site": "http://clairesunstudio.github.io/billionaires/",
   "sections": [
     { "section": "Overview",
       "paragraphs": [
