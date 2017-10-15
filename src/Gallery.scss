@@ -3,13 +3,6 @@ body{
   text-align: center;
 }
 
-.wrap{
-  max-width:1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom:70px;
-}
-
 h1{
   color:#00489F;
   text-transform: uppercase;
@@ -18,9 +11,36 @@ h1{
   font-size:60px;
 }
 
-.gallery{
-  width:100%;
-  padding:20px;
-  margin: 0 auto;
+* {
   box-sizing: border-box;
+}
+
+@mixin clearfix {
+  clear: both;
+  &::after {
+    content: '';
+    display: table;
+  }
+}
+
+.tile {
+  display: inline-block;
+  float: left;
+  width: 350px;
+  height: 200px;
+  margin: 10px;
+}
+
+.gallery {
+  margin: 0 auto;
+  position: relative;
+  @include clearfix;
+}
+
+@media screen and (max-width: 420px){
+  .tile {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
 }

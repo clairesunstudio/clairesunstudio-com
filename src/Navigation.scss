@@ -1,0 +1,65 @@
+@import 'styles/_variables.scss';
+
+nav.navbar {
+    min-height: 50px;
+    border-radius: 0;
+    border: 1px solid transparent;
+    .navbar-brand {
+      font-size: $larger-font-size;
+      font-family: $font-style;
+      transition: all 0.3s;
+    }
+    li{
+      display: inline-block;
+    }
+}
+
+.navbar-default{
+  background-color: $color-white;
+}
+
+nav.navbar.navbar-fixed-top {
+	height: 35px;
+  .navbar-brand {
+    font-size: $lead-font-size;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container{
+    .navbar-header{
+      margin-top: 1.2em;
+    }
+  }
+  nav.navbar{
+    .navbar-brand {
+      font-size: 2em;
+      float: none;
+    }
+  }
+  nav.navbar.navbar-fixed-top {
+    .container{
+      .navbar-header{
+        float:left;
+        display: inline-block;
+      }
+    }
+    .navbar-brand {
+      font-size: $lead-font-size;
+      float: left;
+      padding: 0 15px;
+    }
+    .navbar-nav{
+      float: right;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.navbar{
+    .navbar-brand {
+      font-size: 1em;
+    }
+  }
+}

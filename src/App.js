@@ -1,45 +1,43 @@
 import React, { Component } from 'react';
-import Header from './Header'
-import Gallery from './Gallery'
-import Search from './Search'
-import './App.css';
-//import axios from 'axios'
-import * as sampleData from './sampleData.js';
+import Navigation from './Navigation'
+import Home from './Home'
+import About from './About'
+import Contact from './Contact'
+import Project from './Project'
+import _ from 'lodash'
+import {
+  Redirect,
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+import * as projectData from './Data/projectData.js';
 
-
-var data = sampleData.screens
     class App extends Component {
       constructor(props) {
         super(props);
+        const data = _.mapKeys(projectData[0][0].contents, "name")
         this.state = {
-          data: sampleData.screens
-        };
+          data
+        }
       }
-
-      onFilter = (event) => {
-        var search = new RegExp(event.target.value, 'i');
-        data = data.map(function(item){
-          const isMatched = !item.name.match(search);
-               if(!item.filtered || isMatched !== item.filtered) {
-                 return {
-                   ...item,
-                   filtered: isMatched
-                 }
-               }
-               return item;
-
-             });
-             this.setState({data})
-      };
       render() {
+      //  console.log(this.state.data)
+      const { data } = this.state
         return (
-          <div>
-            <Header />
-            <div>
-                <Search onFilter={this.onFilter} />
-                <Gallery data={this.state.data}/>
+          <Router>
+            <div className="wrapper">
+              <Navigation />
+                <Switch>
+                  <Route path={`/about`} component={About}/>
+                  <Route path={`/contact`} component={Contact}/>
+                   <Route path={`/:projectId`} render={(props) => (
+                    <Project {...props} projectData={data} />
+                  )}/>
+                  <Route path={`/`} component={Home}/>
+                </Switch>
             </div>
-          </div>
+          </Router>
         );
       }
     }

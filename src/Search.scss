@@ -1,0 +1,15 @@
+@import 'styles/_variables.scss';
+
+input{
+  font-size: inherit;
+  border: 1px solid $color-black;
+  padding: 6px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 992px){
+  input{
+    margin-left: 0;
+    margin-top:10px;
+  }
+}

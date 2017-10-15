@@ -1,0 +1,37 @@
+@import 'styles/_variables.scss';
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:200% 50%}
+}
+header{
+    background: linear-gradient(to left, $color-blue-light, $color-purple, $color-pink, $color-purple,$color-blue-light);
+    background-size: 400% 400%;
+    animation: AnimationName 60s ease infinite;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 60px 0;
+  h1{
+    font-size: $larger-font-size;
+    letter-spacing: normal;
+    color: $color-white;
+    margin: 0 auto;
+  }
+  h3{
+    font-weight: $font-normal;
+    color: $color-white;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header{
+    h1{
+      font-size: $title-font-size;
+    }
+    h3{
+      font-size: $base-font-size;
+    }
+  }
+}

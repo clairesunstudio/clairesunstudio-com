@@ -1,1 +1,11 @@
-@import 'styles/_normalize.scss'
+@import 'styles/_normalize.scss';
+@import 'styles/_variables.scss';
+
+h1,h2,h3,h4,h5,h6,p {
+  font-family: $font-sans;
+}
+
+body{
+  font-family: $font-sans;
+  font-size: $regular-font-size;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Search.css'
 
 class Search extends React.Component {
   constructor(props) {
@@ -6,9 +7,9 @@ class Search extends React.Component {
   }
 
   render(){
-    const {onFilter} = this.props
+    const {onSearch} = this.props
     return(
-      <input placeholder='Search project' onChange={onFilter} type='text'/>
+      <input placeholder='Search by name' onChange={onSearch} type='text'/>
     )
   }
 }

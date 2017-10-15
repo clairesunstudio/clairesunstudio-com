@@ -1,0 +1,17 @@
+{
+  "title": "Artificial Bioluminescence",
+  "subtitle":"Fresh Media Part I",
+  "live_site": "",
+  "sections": [
+    { "section": "Overview",
+      "paragraphs": [
+        "Exhibited at the Boston CyberArts Gallery at the Fresh Media Art Show, this installation is my final project from the MIT Media Lab sensor class. I recreated my personal experiences with bioluminescence organisms using Arduinos, LEDs, light and sound sensor to greatly impress the natural ambiance in a city setting. My skills crossing the disciplines of the art and technology, enabled me to conceptualize the design, devise the sensors, program the algorithm, leading up to the final fabrication, testing, and setup."
+      ]
+    },{ "section": "Background",
+      "paragraphs": [
+        "Bioluminescence is magical to see – whether it’s a firefly winding through the night sky or a single-celled creature in the water agitated by the movements of your hands. It is a phenomenon unmatched by any artifacts and technologically impossible to attain currently.  It has intrigued me since an early age while I grew up in China. Being in a city I rarely saw the flash of a firefly. The illumination the fireflies used to hunt and mate was compromised by the artificial lights of the city. Therefore driving the fireflies away from me. Once, the city officials gathered thousands to let out in a park for many to see, only to receive darkness as the delicate fireflies did not light with the dense noises and camera flashes.",
+        "Fast forwarding years I was able to have a magical experience seeing dinoflagellates in the water off the coast of Puerto Rico. The costal water would illuminate with thousands of tiny lights as you swept anything into the water. As I kayaked along the coast, my oars would illuminate into magnificent glistening lights under the water. These spectacles inspired me to artificially create both fireflies and dinoflagellates using sensors for noise, movement, light and water. "
+      ]
+    }
+  ]
+}
