@@ -3,11 +3,13 @@
 .filter-panel{
   text-align: left;
 }
-.btn {
+.btn.btn-primary{
   font-family: $font-sans;
   background-color: $color-black;
   color: $color-white;
-  &:hover, &:focus, &:active, &.active{
+  border: none;
+  margin-right: 3px;
+  &:hover, &:focus, &:active, &:visited, &.active{
     background-color: $color-pink;
     color: $color-white;
   }

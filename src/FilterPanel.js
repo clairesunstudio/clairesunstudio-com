@@ -11,23 +11,13 @@ const upperCaseFirstChar = (string) => {
 
 }
 
-class Filter extends React.Component{
-  render(){
-    return (
-      <Button onClick={this.props.onClick} value={this.props.category}>{upperCaseFirstChar(this.props.category)}</Button>
-    )
-  }
-
-}
-
 class FilterPanel extends React.Component{
   constructor(props){
 		super(props);
     this.state = {
-      uniqueCategories: []
+      uniqueCategories: [],
     }
 	}
-  //var buttonClass = this.state.active ? 'active' : '';
   componentDidMount(){
     var uniqueCategories=[];
     this.props.data.forEach((el)=>{
@@ -39,17 +29,18 @@ class FilterPanel extends React.Component{
     this.setState({uniqueCategories})
   }
   render(){
-    const { selectCategory, onFilter } = this.props
-    var categoryToSelect = selectCategory;
+    const { selectCategory, onFilter, resetFilter, filterValue} = this.props
+    const { uniqueCategories } = this.state
+    const isActive = (value) => {
+      return value == filterValue?'active':''
+    }
+    const FilterList = uniqueCategories.map((category,i) => {
+      return <Button bsStyle="primary" className={isActive(category)} onClick={selectCategory, onFilter} value={category} key={i}>{upperCaseFirstChar(category)}</Button>
+    })
     return (
       <div className="filter-panel">
-      <Button onClick={this.props.resetFilter}>All</Button>
-        {
-          this.state.uniqueCategories.map(function(el,i){
-            var boundClick = categoryToSelect.bind(null,el);
-            return <Filter onClick={boundClick, onFilter} category={el} key={i} />
-          })
-        }
+      <Button bsStyle="primary" className={isActive('all')} onClick={resetFilter} value='all'>All</Button>
+      {FilterList}
       </div>
     )
   }

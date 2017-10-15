@@ -12,7 +12,7 @@ import { Col } from 'react-bootstrap'
         super(props);
         this.state = {
           data: homeData,
-          filtered: false
+          filterValue: 'all'
         };
       }
 
@@ -20,7 +20,7 @@ import { Col } from 'react-bootstrap'
         const value = event.target.value
         var search = new RegExp(value, 'i');
         if(value){
-          var data = this.state.data.map(function(item){
+          var data = this.state.data.map((item) => {
             const isMatched = item.name.match(search);
                  if(!item.filtered || isMatched !== item.filtered) {
                    return {
@@ -39,58 +39,47 @@ import { Col } from 'react-bootstrap'
       }
       selectCategory(element){
           var categoryName = element;
-        console.log('category is: '+ categoryName);
-                    var displayedCategories = this.state.data.filter(function(el) {
-
-                        var searchValue = el.category;
-                        return searchValue.indexOf(categoryName) !== -1;
-                        console.log(searchValue);
-                    });
-
-                    this.setState({
-                        displayedCategories
-
-                    });
+          var displayedCategories = this.state.data.filter((el) => {
+              var searchValue = el.category;
+              return searchValue.indexOf(categoryName) !== -1;
+              console.log(searchValue);
+          });
+          this.setState({
+              displayedCategories
+          });
 
       }
       onFilter(e) {
         const filterValue = e.target.getAttribute('value')
-        if (this.state.filtered === false) {
-          let newData = homeData.filter(function(data,index){
+          let newData = homeData.filter((data,index) => {
             if (data.category.indexOf(filterValue) !== -1) {
               return data
             }
           });
           this.setState({
             data: newData,
-            filtered: true
+            filterValue
           });
-        } else {
-          this.setState({
-            data: homeData,
-            filtered: false
-          });
-        }
       }
       resetFilter(e){
-        console.log('clear')
-      this.setState({ data: homeData })
+        this.setState({ data: homeData, filterValue: 'all' })
       }
       render() {
-        //console.log(this.state.data)
+        const { data, filterValue } = this.state
+        const { selectCategory, onFilter, resetFilter, onSearch } = this
         return (
             <div className="home_gallery">
             <div className="controls container">
               <div className="row">
                 <Col md={10}>
-                <FilterPanel data={this.state.data} selectCategory={this.selectCategory.bind(this)} onFilter={this.onFilter.bind(this)} resetFilter={this.resetFilter.bind(this)}/>
+                <FilterPanel data={data} filterValue={filterValue} selectCategory={selectCategory.bind(this)} onFilter={onFilter.bind(this)} resetFilter={resetFilter.bind(this)}/>
                 </Col>
                 <Col md={2}>
-                <Search onSearch={this.onSearch} />
+                <Search onSearch={onSearch} />
                 </Col>
                 </div>
             </div>
-                <Gallery data={this.state.data}/>
+                <Gallery data={data}/>
             </div>
         );
       }
