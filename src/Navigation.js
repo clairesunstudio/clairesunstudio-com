@@ -1,6 +1,7 @@
 import React from 'react'
 import {Nav, Navbar} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { SocialIcon } from 'react-social-icons';
 import $ from 'jquery'
 import './Navigation.css'
 
@@ -39,6 +40,10 @@ class Header extends React.Component {
 
   render(){
     const {fixedTop, brandName} = this.state
+    const socialIconStyle ={
+      width:30,height:30, margin:3, marginTop:10
+    }
+    const socialIconColor = "#263238"
     return(
       <Navbar collapseOnSelect fixedTop={fixedTop}>
         <Navbar.Header>
@@ -48,6 +53,12 @@ class Header extends React.Component {
         </Navbar.Header>
           <Nav pullRight>
             <li><Link to="/about">Resume</Link></li>
+            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.linkedin.com/in/minghuasun/" />
+            <SocialIcon style={socialIconStyle} color={socialIconColor} url="http://github.com/clairesunstudio" />
+            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.facebook.com/clairesunstudio" />
+            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.twitter.com/iamclairesun" />
+            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.instagram.com/clairelilbear" />
+            <SocialIcon style={socialIconStyle} color={socialIconColor} network="email" url="mailto:clairesunstudio@gmail.com" />
           </Nav>
       </Navbar>
     )
