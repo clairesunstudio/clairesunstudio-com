@@ -47,8 +47,7 @@ class Header extends React.Component {
           </Navbar.Brand>
         </Navbar.Header>
           <Nav pullRight>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/about">Resume</Link></li>
           </Nav>
       </Navbar>
     )
