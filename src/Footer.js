@@ -1,22 +1,28 @@
 import React from 'react'
-//import './Footer.css'
+import './Footer.css'
+import { SocialIcon } from 'react-social-icons';
+import { Col } from 'react-bootstrap'
 
 class Footer extends React.Component{
 
   render = () =>  {
+    const socialIconStyle ={
+      width:30,height:30, margin:3
+    }
     return (
       <footer>
         <div className="container">
-            <div className="col-xs-12 col-md-6">
-                    <address>
-                      <strong>Massachusetts Department of Elementary & Secondary Education</strong>
-                      <br />
-                      <i className="glyphicon glyphicon-map-marker" aria-hidden="true" /> 75 Pleasant St, Malden, MA 02148
-                      <br />
-                      <i className="glyphicon glyphicon-earphone" aria-hidden="true" /><a href="tel:(781) 338-3000" aria-label="Massachusetts Department of Elementary & Secondary Education phone number"> (781) 338-3000</a>
-                      <br />
-                    </address>
-            </div>
+            <Col md={6}>
+                <p><strong>© 2017 Claire Sun Studio </strong></p>
+            </Col>
+            <Col md={6}>
+              <SocialIcon style={socialIconStyle} color="#fff" url="https://www.linkedin.com/in/minghuasun/" />
+              <SocialIcon style={socialIconStyle} color="#fff" url="http://github.com/clairesunstudio" />
+              <SocialIcon style={socialIconStyle} color="#fff" url="https://www.facebook.com/clairesunstudio" />
+              <SocialIcon style={socialIconStyle} color="#fff" url="https://www.twitter.com/iamclairesun" />
+              <SocialIcon style={socialIconStyle} color="#fff" url="https://www.instagram.com/clairelilbear" />
+              <SocialIcon style={socialIconStyle} color="#fff" network="email" url="mailto:clairesunstudio@gmail.com" />
+            </Col>
         </div>
       </footer>
 
