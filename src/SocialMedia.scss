@@ -1,0 +1,12 @@
+@import './styles/_variables.scss';
+
+.social-media{
+  display: inline-block;
+  text-align: right;
+  @media screen and (max-width: 911px) {
+    text-align: center;
+  }
+}
+.social-icon:hover {
+  transform: scale(1.1);
+}

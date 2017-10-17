@@ -1,7 +1,7 @@
 import React from 'react'
 import {Nav, Navbar} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { SocialIcon } from 'react-social-icons';
+import SocialMedia from './SocialMedia'
 import $ from 'jquery'
 import './Navigation.css'
 
@@ -52,13 +52,8 @@ class Header extends React.Component {
           </Navbar.Brand>
         </Navbar.Header>
           <Nav pullRight>
+            <SocialMedia socialIconStyle={socialIconStyle} socialIconColor={socialIconColor}/>
             <li><Link to="/about">Resume</Link></li>
-            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.linkedin.com/in/minghuasun/" />
-            <SocialIcon style={socialIconStyle} color={socialIconColor} url="http://github.com/clairesunstudio" />
-            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.facebook.com/clairesunstudio" />
-            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.twitter.com/iamclairesun" />
-            <SocialIcon style={socialIconStyle} color={socialIconColor} url="https://www.instagram.com/clairelilbear" />
-            <SocialIcon style={socialIconStyle} color={socialIconColor} network="email" url="mailto:clairesunstudio@gmail.com" />
           </Nav>
       </Navbar>
     )
