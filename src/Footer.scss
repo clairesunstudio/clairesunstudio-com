@@ -8,5 +8,19 @@ footer{
   bottom: 0;
   width: 100%;
   display: block;
-  text-align: left;
+  float: none;
+  clear: both;
+  text-align: center;
+  @media screen and (min-width: 768px){
+    div{
+      text-align: left;
+      &:nth-child(2){
+        text-align: right;
+        display: inline;
+      }
+    }
+  }
+  p{
+    margin-top: 7px;
+  }
 }

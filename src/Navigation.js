@@ -41,7 +41,7 @@ class Header extends React.Component {
   render(){
     const {fixedTop, brandName} = this.state
     const socialIconStyle ={
-      width:30,height:30, margin:3, marginTop:10
+      width:30,height:30, margin:3
     }
     const socialIconColor = "#263238"
     return(

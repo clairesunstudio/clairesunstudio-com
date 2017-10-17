@@ -30,8 +30,15 @@ nav.navbar {
 nav.navbar.navbar-fixed-top {
 	height: 35px;
   .navbar-brand {
-    font-size: $lead-font-size;
+    font-size: $title-font-size;
     float: left;
+  }
+}
+@media screen and (max-width: 991px) {
+  nav.navbar{
+    .navbar-brand {
+      font-size: $title-font-size;
+    }
   }
 }
 
@@ -43,7 +50,7 @@ nav.navbar.navbar-fixed-top {
   }
   nav.navbar{
     .navbar-brand {
-      font-size: 2em;
+      font-size: $title-font-size;
       float: none;
     }
   }
@@ -55,8 +62,6 @@ nav.navbar.navbar-fixed-top {
       }
     }
     .navbar-brand {
-      font-size: $lead-font-size;
-      float: left;
       padding: 0 15px;
     }
     .navbar-nav{
@@ -68,7 +73,7 @@ nav.navbar.navbar-fixed-top {
 @media screen and (max-width: 600px) {
   nav.navbar{
     .navbar-brand {
-      font-size: 1em;
+      font-size: $title-font-size;
     }
   }
 }
