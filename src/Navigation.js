@@ -18,7 +18,7 @@ class Header extends React.Component {
     }
 
       handleScroll() {
-      if ($(window).scrollTop() >=  50) {
+      if ($(window).scrollTop() >=  30) {
         this.setState({
           fixedTop: true,
           brandName: 'css'

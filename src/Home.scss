@@ -1,4 +1,11 @@
 .home_gallery{
     margin: 0 auto;
     text-align: left;
+    margin-top:70px;
+    @media screen and (max-width: 767px) {
+      margin-top:110px;
+    }
+    @media screen and (max-width: 300px) {
+      margin-top:150px;
+    }
 }
