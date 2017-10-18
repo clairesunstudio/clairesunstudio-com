@@ -11,7 +11,8 @@ class Header extends React.Component {
       super(props);
       this.state = {
         fixedTop: false,
-        brandName: 'clairesunstudio'
+        brandName: 'clairesunstudio',
+        connect: 'collapsed'
       };
       this.handleScroll = this.handleScroll.bind(this);
     }
@@ -37,23 +38,27 @@ class Header extends React.Component {
     componentWillUnmount() {
       window.removeEventListener("scroll", this.handleScroll);
     }
+    onConnectClick(){
+      this.state.connect == 'collapsed'? this.setState({connect: 'expanded'}): this.setState({connect: 'collapsed'})
+    }
 
   render(){
-    const {fixedTop, brandName} = this.state
+    const {fixedTop, brandName, connect} = this.state
     const socialIconStyle ={
       width:30,height:30, margin:3
     }
     const socialIconColor = "#263238"
     return(
-      <Navbar collapseOnSelect fixedTop={fixedTop}>
+      <Navbar className={connect} fixedTop={fixedTop}>
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">{brandName}</Link>
           </Navbar.Brand>
         </Navbar.Header>
           <Nav pullRight>
-            <SocialMedia socialIconStyle={socialIconStyle} socialIconColor={socialIconColor}/>
             <li><Link to="/about">Resume</Link></li>
+            <li className="social-media-collapsed" onClick={()=>this.onConnectClick()}><a>Connect</a></li>
+            <SocialMedia socialIconStyle={socialIconStyle} socialIconColor={socialIconColor} collapsed={connect}/>
           </Nav>
       </Navbar>
     )
