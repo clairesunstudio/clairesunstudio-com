@@ -115,7 +115,6 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"facebook-results.png"},
           {"type":"file","name":"jewelry-1.jpg"}
         ]},
         {"type":"file","name":"jewelry-2.jpg"},

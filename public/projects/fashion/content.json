@@ -5,7 +5,7 @@
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "Heavily inspired by Mike Bostock's visualization of the 2014 fall fashion week. I recreated a similar concept prototype using plain CSS and Javascript without D3. Using photos from various classic Alfred Hitchcock movies I assembled a working prototype that allows users to visualize and explore fashions from the leading ladies. Grace Kelly, Tippi Hedren, Janet Leigh, Joan Fontaine, Kim Novak and others are all featured in this site. Users can explore each article of clothing and see visual representations of the complete outfits."
+        "Heavily inspired by Mike Bostock's visualization of the 2014 fall fashion week. I recreated a similar concept prototype using CSS and plain Javascript without D3. Using movie scenes from various classic Alfred Hitchcock movies I assembled a working prototype that allows users to visualize and explore fashions from the leading ladies. Grace Kelly, Tippi Hedren, Janet Leigh, Joan Fontaine, Kim Novak and others are all featured in this site. Users can explore similar articles of clothing on the Internet to recreate the outfit. "
       ]
     }
   ]

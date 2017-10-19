@@ -1,11 +1,11 @@
 {
-  "title": "Chapter55",
-  "subtitle":"An interactive data story on Massachusetts opioid epidemic",
+  "title": "The Massart-MFA Map",
+  "subtitle":"A map design driven by user research and testing",
   "live_site": "",
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "As part of a multi-faceted effort to combat the opioid epidemic, Chapter 55 of the Acts of 2015 was passed by the Legislature and signed into law by Governor Baker. MassIT worked closely with DPH on visualizing the datasets and created an interactive data story to engage the public on this subject. As the designer and developer of this project, I worked closely with the data team from concept sketching, designing data visualizations, prototyping, developing into the final deployment and performance analytics."
+        "This is a collaborative project based on researching and user-testing. We were asked to select a route and create a map for someone who would be carrying a 6 foot wide umbrella navigating from MFA to the President’s Gallery on foot. My group went through extensive research and user testing to ensure the route is the most efficient and the map is user-friendly. My role was to lead the user research and product design."
       ]
     }
   ]
