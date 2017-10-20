@@ -8,7 +8,7 @@ module.exports =
   "category": ["data visualization", "UI", "UX", "design", "web", "development"]
 }, {
   "url": "dese",
-  "name": "High School Success Data Story",
+  "name": "The ABCs of High School Success",
   "sort": 2,
   "key": 2,
   "description": "A data story exploring long-term impacts of high school attendance, behavior, and course performance.",
@@ -22,7 +22,7 @@ module.exports =
   "category": ["data visualization", "prototype"]
 }, {
   "url": "billionaire",
-  "name": "billionaire",
+  "name": "An IT Billionaires Map",
   "sort": 4,
   "key": 4,
   "description": "An interactive data visualization built with D3.js",
@@ -64,24 +64,24 @@ module.exports =
   "category": ["interative", "installation", "prototype"]
 }, {
   "url": "yes",
-  "name": "Youth Employment and Safety",
+  "name": "Young Workers Safety",
   "sort": 10,
   "key": 10,
-  "description": "Sensor Light Installation at the Fresh Media Show",
+  "description": "A marketing campaign raising awareness of young workers safety and rights",
   "category": ["branding", "design", "marketing"]
 }, {
   "url": "bnbcards",
   "name": "The Story T and PostCard Project",
   "sort": 11,
   "key": 11,
-  "description": "An interactive data visualization built with D3.js",
+  "description": "Design for the non-profit project empowering young embroideress in rural China",
   "category": ["branding", "design", "marketing"]
 }, {
   "url": "ssss",
   "name": "See Something Say Something",
   "sort": 12,
   "key": 12,
-  "description": "A social media campaign for Boston Marathon 2016 ",
+  "description": "A public safety social media campaign for the 2016 Boston Marathon",
   "category": ["branding", "design", "marketing"]
 }, {
   "url": "massanimalfund",
