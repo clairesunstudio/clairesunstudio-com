@@ -14,7 +14,7 @@ nav.navbar {
       color: $color-gray-darker;
       font-size: $larger-font-size;
       font-family: $font-style;
-      transition: font-size 0.3s ease;
+      transition: font-size 0.3s ease, background-color 0.3s ease;
     }
     li{
       display: inline-block;
@@ -41,6 +41,7 @@ nav.navbar {
 nav.navbar.navbar-fixed-top {
 	height: 35px;
   padding-top: 0;
+  background-color: $color-white-alt;
   .navbar-brand {
     font-size: $title-font-size;
     float: left;
