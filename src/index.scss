@@ -9,3 +9,15 @@ body{
   font-family: $font-sans;
   font-size: $regular-font-size;
 }
+
+html, body, #root{
+  position: relative;
+  height: 100%;
+  display: block;
+}
+
+.wrapper{
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}

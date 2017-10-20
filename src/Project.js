@@ -66,7 +66,7 @@ class Project extends React.Component{
     }
     const {title, subtitle, sections, live_site} = content
     return (
-        <div className="wrapper">
+        <div className="project">
           <Header title={title} subtitle={subtitle} live_site={live_site}/>
           <div className="container">
             <Content sections={sections}/>
