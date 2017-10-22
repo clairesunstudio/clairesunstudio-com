@@ -151,7 +151,7 @@ const Shuffle = React.createClass({
   componentWillUnmount() {
     ReactDom.unmountComponentAtNode(this._portalNode);
     ReactDom.findDOMNode(this.refs.container).removeChild(this._portalNode);
-  //  window.removeEventListener('resize', this._renderClonesInitially);
+    window.removeEventListener('resize', this._renderClonesInitially);
   },
 
   componentWillReceiveProps(nextProps) {
@@ -216,6 +216,7 @@ const Shuffle = React.createClass({
   _getPositions() {
     let positions = {};
     React.Children.forEach(this.props.children, (child) => {
+
       let ref = child.key;
       let node = ReactDom.findDOMNode(this.refs[ref]);
       let rect = node.getBoundingClientRect();
@@ -243,7 +244,6 @@ const Shuffle = React.createClass({
       scale: this.props.scale,
       duration: this.props.duration
     });
-    console.log(this._getPositions())
     ReactDom.unstable_renderSubtreeIntoContainer(this, <Clones {...cloneProps}/>, this._portalNode);
     this.setState({ready: true});
   },

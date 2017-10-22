@@ -10,7 +10,7 @@ class Gallery extends React.Component{
   render() {
     return (
       <div className="gallery">
-        <Shuffle duration={500} fade={false} scale={true}>
+        <Shuffle duration={500} fade={true} scale={true}>
           {this.props.data.map(function(item, i){
             return (
               <div className="tile" key={item.url}><Card item={item}/></div>

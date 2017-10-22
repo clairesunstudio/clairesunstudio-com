@@ -4,9 +4,7 @@ import './Header.css'
 
 
 const LiveSite = ({live_site}) => {
-  console.log(live_site)
   if (live_site != "") {
-    console.log("has live site")
     return <Button href={live_site}>Visit Live Site</Button>
   } else {
     return <div></div>

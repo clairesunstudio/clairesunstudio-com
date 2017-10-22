@@ -2,7 +2,6 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 
 const Paragraphs = ({paragraphs}) => {
-  console.log(paragraphs)
   const ParagraphList = paragraphs.map((paragraph, i) => (
       <p key={`paragraph_${i}`}>{paragraphs[i]}</p>
   ))
@@ -12,7 +11,6 @@ const Paragraphs = ({paragraphs}) => {
 }
 
 const Content = ({sections}) => {
-  console.log(sections)
   const sectionList = sections.map((section, i) => (
     <section key={`section_+${i}`}>
         <h2>{sections[i].section}</h2>
