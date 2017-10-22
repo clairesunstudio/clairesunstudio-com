@@ -95,7 +95,7 @@ module.exports =
   "name": "Ready MA",
   "sort": 14,
   "key": 14,
-  "description": "A Marketing campaign for MEMA hurricane prepareness month",
+  "description": "A marketing campaign for MEMA hurricane preparedness month",
   "category": ["design", "marketing"]
 }, {
   "url": "draw",

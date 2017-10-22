@@ -21,14 +21,19 @@ module.exports =
     {"type":"directory","name":"bnbcards","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
-        {"type":"file","name":"bnbgirls_card1.jpg"},
-        {"type":"file","name":"bnbgirls_card2.jpg"},
-        {"type":"file","name":"bnbgirls_card3.jpg"},
-        {"type":"file","name":"bnbgirls_card4.jpg"},
+        {"type":"file","name":"1bnbgirls_card1.jpg"},
+        {"type":"file","name":"2bnbgirls_card2.jpg"},
+        {"type":"file","name":"3bnbgirls_card3.jpg"},
+        {"type":"file","name":"4bnbgirls_card4.jpg"},
+        {"type":"file","name":"bnbgirls_card-crew.jpg"},
+        {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"story-T.jpg"}
+        ]},
         {"type":"file","name":"write_event1.jpg"},
         {"type":"file","name":"write_event2.jpg"},
         {"type":"file","name":"write_event3.jpg"},
-        {"type":"file","name":"write_event4.jpg"}
+        {"type":"file","name":"write_event4.jpg"},
+        {"type":"file","name":"xiaozhao.jpg"}
       ]}
     ]},
     {"type":"directory","name":"bnbgirls","contents":[
@@ -64,10 +69,14 @@ module.exports =
     {"type":"directory","name":"draw","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
-        {"type":"file","name":"draw.jpg"},
+        {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"draw.jpg"}
+        ]},
         {"type":"file","name":"pattern1.jpg"},
         {"type":"file","name":"pattern2.jpg"},
-        {"type":"file","name":"pattern3.jpg"}
+        {"type":"file","name":"pattern3.jpg"},
+        {"type":"file","name":"poster2.jpg"},
+        {"type":"file","name":"poster4.jpg"}
       ]}
     ]},
     {"type":"directory","name":"facebookfan","contents":[
@@ -111,6 +120,8 @@ module.exports =
         ]}
       ]}
     ]},
+    {"type":"directory","name":"frog","contents":[
+    ]},
     {"type":"directory","name":"jewelry","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
@@ -149,15 +160,10 @@ module.exports =
     {"type":"directory","name":"mdd","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
-        {"type":"file","name":"cleaner facebook.jpg"},
-        {"type":"file","name":"delislicer facebook.jpg"},
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"facebook-results.png"}
-        ]},
-        {"type":"file","name":"fryolator facebook.jpg"},
-        {"type":"file","name":"ladder facebook.jpg"},
-        {"type":"file","name":"register facebook.jpg"},
-        {"type":"file","name":"wheelchair facebook.jpg"}
+          {"type":"file","name":"mdd_home.png"},
+          {"type":"file","name":"mdd_intro.png"}
+        ]}
       ]}
     ]},
     {"type":"directory","name":"readyMA","contents":[
@@ -198,13 +204,12 @@ module.exports =
     {"type":"directory","name":"wefilm","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
-        {"type":"file","name":"SSSS-bag.png"},
-        {"type":"file","name":"SSSS-building.png"},
-        {"type":"file","name":"SSSS-car.png"},
-        {"type":"file","name":"SSSS-crowd.png"},
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"SSSS-infographic.png"}
-        ]}
+          {"type":"file","name":"wefilm.png"}
+        ]},
+        {"type":"file","name":"mockup.png"},
+        {"type":"file","name":"skech.png"},
+        {"type":"file","name":"wefilm-crew.jpg"}
       ]}
     ]},
     {"type":"directory","name":"yes","contents":[
@@ -222,5 +227,5 @@ module.exports =
       ]}
     ]}
   ]},
-  {"type":"report","directories":59,"files":104}
+  {"type":"report","directories":62,"files":102}
 ]
