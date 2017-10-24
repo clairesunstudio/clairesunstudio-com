@@ -2,7 +2,7 @@ import React from 'react'
 import { TagCloud } from "react-tagcloud";
 
 const SkillCloud = ({children}) => {
-  const color = `#FF0066`
+  const color = `#23A6D5`
   const data = [
     {value: "Atomic Design", count:15, color: color},
     {value: "Rapid Prototyping", count:18, color: color},

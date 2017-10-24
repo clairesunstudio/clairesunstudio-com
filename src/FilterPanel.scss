@@ -9,7 +9,7 @@
   color: $color-white;
   border: none;
   margin: 0 3px 3px 0;
-  &:hover, &:focus, &:active, &:visited, &.active{
+  &:hover, &:focus, &:active, &.active{
     background-color: $color-pink;
     color: $color-white;
   }

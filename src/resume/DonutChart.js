@@ -10,7 +10,7 @@ import {
 import './DonutChart.css'
 
 const DonutChart = ({children}) => {
-  const color = ["#4A148C", "#CFD8DC"]
+  const color = ["#23A6D5", "#CFD8DC"]
   const data = [
     { data: [{name: "AI", value: 100, size:'lg'},{ value: 0}]},
     { data: [{name: "PS", value: 95, size:'lg'},{ value: 5}]},
