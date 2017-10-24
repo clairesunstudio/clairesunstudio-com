@@ -1,3 +1,12 @@
 .resume_container{
   margin-top:70px;
+  .header-bar.thin{
+    padding: 5px 0;
+  }
+  .profile_pic{
+    background: red;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+  }
 }
