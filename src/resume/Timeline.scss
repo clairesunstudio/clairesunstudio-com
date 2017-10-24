@@ -1,0 +1,45 @@
+@import '../styles/_variables.scss';
+
+.timeline_section{
+  position: relative;
+      font-size: 80%;
+      font-weight: 300;
+      width: 95%;
+      margin: 0px auto;
+      display: block;
+  .timeline_line{
+    position: absolute;
+    top: 0px; left: 87px;
+    height: 100%;
+    width: 2px;
+    background: $color-blue;
+  }
+  .timeline_event{
+    position: relative;
+    margin: 25px 0px;
+    padding-left: 100px;
+    .timeline_event-date{
+      position: absolute;
+        top: 0px; left: 10px;
+      }
+    .timeline_event-icon{
+      position: absolute;
+        top: 0px; left: 80px;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      background: $color-blue;
+      display: flex;
+      :after{
+        content:'';
+        width: 25px;
+        height: 25px;
+        background: $color-blue-alt;
+      }
+    }
+    .timeline_event-content{
+      position: relative;
+      margin-left: 10px;
+    }
+  }
+}

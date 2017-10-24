@@ -4,6 +4,7 @@ import './About.css'
 import SkillCloud from './resume/SkillCloud'
 import MyTimeline from './resume/MyTimeline'
 import SectionHeader from './resume/SectionHeader'
+import Timeline from './resume/Timeline'
 
 
 
@@ -35,8 +36,16 @@ export default class About extends React.Component {
             <SectionHeader>ADOBE proficiency</SectionHeader>
             <SectionHeader>languages</SectionHeader>
           </Col>
-          <Col md={7}>
-            <MyTimeline/>
+          <Col md={1} />
+          <Col md={6}>
+          <SectionHeader>Education<img src='assets/icons/education.svg'/></SectionHeader>
+              <Timeline/>
+          <SectionHeader>Experience<img src='assets/icons/job.svg'/></SectionHeader>
+          <Timeline/>
+          <SectionHeader>Projects<img src='assets/icons/project.svg'/></SectionHeader>
+          <Timeline/>
+          <SectionHeader>volunteer<img src='assets/icons/volunteer.svg'/></SectionHeader>
+          <Timeline/>
           </Col>
         </div>
       </div>
