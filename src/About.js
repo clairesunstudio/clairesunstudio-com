@@ -23,7 +23,6 @@ export default class About extends React.Component {
             <div className="profile_pic" style={profileStyle}></div>
             <h2>Minghua Sun</h2>
             <h4>UI/UX/Data Visualization Designer Developer</h4>
-            <hr/>
             <ul className="info_list">
             <li><img src="assets/icons/phone.svg"/> +1 (617) 834-1062</li>
             <li><img src="assets/icons/location.svg"/> Boston, MA</li>
