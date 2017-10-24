@@ -7,6 +7,7 @@ import SectionHeader from './resume/SectionHeader'
 import DonutChart from './resume/DonutChart'
 import TagPill from './resume/TagPill'
 import Timeline from './resume/Timeline'
+import Icon from './resume/Icon'
 
 
 
@@ -26,11 +27,11 @@ export default class About extends React.Component {
             <h2>Minghua Sun</h2>
             <h4>UI/UX/Data Visualization Designer Developer</h4>
             <ul className="info_list">
-            <li><img src="assets/icons/phone.svg"/> +1 (617) 834-1062</li>
-            <li><img src="assets/icons/location.svg"/> Boston, MA</li>
-            <li><img src="assets/icons/website.svg"/> clairesun.com</li>
-            <li><img src="assets/icons/email.svg"/> clairesunstudio@gmail.com</li>
-            <li><img src="assets/icons/github.svg"/> @clairesunstudio</li>
+            <li><Icon name='phone'/> +1 (617) 834-1062</li>
+            <li><Icon name='location'/> Boston, MA</li>
+            <li><Icon name='website'/> clairesun.com</li>
+            <li><Icon name='email'/> clairesunstudio@gmail.com</li>
+            <li><Icon name='github'/> @clairesunstudio</li>
             </ul>
             <SectionHeader>SkillCloud</SectionHeader>
             <SkillCloud/>
@@ -41,13 +42,13 @@ export default class About extends React.Component {
           </Col>
           <Col md={1} />
           <Col md={6}>
-          <SectionHeader>Education<img src='assets/icons/education.svg'/></SectionHeader>
+          <SectionHeader>Education<Icon name='education'/></SectionHeader>
               <Timeline/>
-          <SectionHeader>Experience<img src='assets/icons/job.svg'/></SectionHeader>
+          <SectionHeader>Experience<Icon name='job'/></SectionHeader>
           <Timeline/>
-          <SectionHeader>Projects<img src='assets/icons/project.svg'/></SectionHeader>
+          <SectionHeader>Projects<Icon name='project'/></SectionHeader>
           <Timeline/>
-          <SectionHeader>volunteer<img src='assets/icons/volunteer.svg'/></SectionHeader>
+          <SectionHeader>volunteer<Icon name='volunteer'/></SectionHeader>
           <Timeline/>
           </Col>
         </div>
