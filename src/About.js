@@ -34,10 +34,10 @@ export default class About extends React.Component {
             <li><Icon name='email'/> clairesunstudio@gmail.com</li>
             <li><Icon name='github'/> @clairesunstudio</li>
             </ul>
+            <SectionHeader>Design Tools proficiency</SectionHeader>
+            <DonutChart/>
             <SectionHeader>SkillCloud</SectionHeader>
             <SkillCloud/>
-            <SectionHeader>ADOBE proficiency</SectionHeader>
-            <DonutChart/>
             <SectionHeader>languages</SectionHeader>
             <TagPill />
           </Col>
