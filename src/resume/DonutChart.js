@@ -12,12 +12,12 @@ import './DonutChart.css'
 const DonutChart = ({children}) => {
   const color = ["#4A148C", "#CFD8DC"]
   const data = [
-    { data: [{name: "AI", value: 80, size:'lg'},{ value: 20}]},
-    { data: [{name: "PS", value: 80, size:'lg'},{ value: 20}]},
-    { data: [{name: "XD", value: 80, size:'lg'},{ value: 20}]},
-    { data: [{name: "ID", value: 80, size:'lg'},{ value: 20}]},
-    { data: [{name: "AE", value: 80, size:'lg'},{ value: 20}]},
-    { data: [{name: "Invision", value: 80, size:'md'},{ value: 20}]},
+    { data: [{name: "AI", value: 100, size:'lg'},{ value: 0}]},
+    { data: [{name: "PS", value: 95, size:'lg'},{ value: 5}]},
+    { data: [{name: "AE", value: 70, size:'lg'},{ value: 30}]},
+    { data: [{name: "ID", value: 70, size:'lg'},{ value: 30}]},
+    { data: [{name: "XD", value: 100, size:'lg'},{ value: 0}]},
+    { data: [{name: "Invision", value: 90, size:'md'},{ value: 10}]},
     { data: [{name: "Sketch", value: 80, size:'md'},{ value: 20}]},
     { data: [{name: "Optimal Workshop", value: 80, size:'sm'},{ value: 20}]},
   ];
