@@ -9,7 +9,7 @@ export default class About extends React.Component {
 
   render() {
     const profileStyle = {
-      backgroundImage: `url('assets/profile_pic.jpg')`
+      backgroundImage: `url('assets/profile-pic.jpg')`
     };
     const color = `#263238`
     const data = [
@@ -38,11 +38,17 @@ export default class About extends React.Component {
       <div className="resume_container">
         <header className="header-bar thin"></header>
         <div className="container">
-          <Col md={6} className="about">
-          <Col md={12}>
-            <div style={profileStyle} className="profile_pic">
-            profile pic
-            </div>
+          <Col md={5} className="about">
+            <div className="profile_pic" style={profileStyle}></div>
+            <h2>Minghua Sun</h2>
+            <h4>UI/UX/Data Visualization Designer Developer</h4>
+            <ul className="info_list">
+            <li><img src="assets/icons/phone.svg"/> +1 (617) 834-1062</li>
+            <li><img src="assets/icons/location.svg"/> Boston, MA</li>
+            <li><img src="assets/icons/website.svg"/> clairesun.com</li>
+            <li><img src="assets/icons/email.svg"/> clairesunstudio@gmail.com</li>
+            <li><img src="assets/icons/github.svg"/> @clairesunstudio</li>
+            </ul>
             <TagCloud minSize={10}
                       maxSize={30}
                       tags={data} />

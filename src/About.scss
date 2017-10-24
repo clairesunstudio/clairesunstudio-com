@@ -1,12 +1,27 @@
 .resume_container{
+  text-align: left;
   margin-top:70px;
   .header-bar.thin{
     padding: 5px 0;
   }
   .profile_pic{
-    background: red;
-    height: 120px;
-    width: 120px;
+    background-size: cover;
+    height: 180px;
+    width: 180px;
     border-radius: 100%;
+  }
+  .info_list{
+    list-style-type: none;
+    li{
+      img{
+        margin-left: -35px;
+        margin-right: 10px;
+        width: 23px;
+        height: 33px;
+      }
+      &:first-child{
+        margin-bottom: 5px;
+      }
+    }
   }
 }
