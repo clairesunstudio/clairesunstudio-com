@@ -1,0 +1,18 @@
+@import '../styles/_variables.scss';
+
+.pills{
+  margin: 20px 0 40px;
+  overflow: hidden;
+  .capsule{
+    float: left;
+    background-color: $color-gray-lighter;
+    border-radius: 100px;
+    margin: 5px 5px 5px 0px;
+    padding: 5px 10px;
+  }
+  :after{
+    content: '';
+    clear:both;
+    display: table;
+  }
+}
