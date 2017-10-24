@@ -2,7 +2,6 @@ import React from 'react';
 import { Col } from 'react-bootstrap'
 import './About.css'
 import SkillCloud from './resume/SkillCloud'
-import MyTimeline from './resume/MyTimeline'
 import SectionHeader from './resume/SectionHeader'
 import DonutChart from './resume/DonutChart'
 import TagPill from './resume/TagPill'
