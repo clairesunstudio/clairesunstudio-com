@@ -1,17 +1,37 @@
 @import 'styles/_variables.scss';
 
 nav.navbar {
-    min-height: 50px;
+    height: 50px;
     border-radius: 0;
-    border: 1px solid transparent;
+    border: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    z-index: 999;
     .navbar-brand {
+      color: $color-gray-darker;
       font-size: $larger-font-size;
       font-family: $font-style;
-      transition: all 0.3s;
+      transition: font-size 0.3s ease, background-color 0.3s ease;
     }
     li{
       display: inline-block;
     }
+    .social-media-collapsed{
+      display: none;
+    }
+}
+
+.navbar-default .navbar-nav{
+  li{
+    float: none;
+    a{
+      color: $color-gray-darker;
+      padding: 10px;
+    }
+  }
 }
 
 .navbar-default{
@@ -20,25 +40,39 @@ nav.navbar {
 
 nav.navbar.navbar-fixed-top {
 	height: 35px;
+  padding-top: 0;
+  background-color: $color-white-alt;
   .navbar-brand {
-    font-size: $lead-font-size;
+    font-size: $title-font-size;
     float: left;
+  }
+}
+@media screen and (max-width: 991px) {
+  nav.navbar{
+    .navbar-brand {
+      font-size: $title-font-size;
+    }
   }
 }
 
 @media screen and (max-width: 767px) {
   .container{
     .navbar-header{
-      margin-top: 1.2em;
+      margin-top: 1em;
     }
   }
   nav.navbar{
+    padding-top: 0;
     .navbar-brand {
-      font-size: 2em;
+      font-size: $title-font-size;
       float: none;
     }
   }
   nav.navbar.navbar-fixed-top {
+    transition: height 0.2s ease;
+    &.expanded{
+      height: 100px;
+    }
     .container{
       .navbar-header{
         float:left;
@@ -46,12 +80,20 @@ nav.navbar.navbar-fixed-top {
       }
     }
     .navbar-brand {
-      font-size: $lead-font-size;
-      float: left;
       padding: 0 15px;
     }
-    .navbar-nav{
+    .navbar-nav {
       float: right;
+      text-align: right;
+    }
+    .social-media-collapsed{
+      display: inline-block;
+    }
+    .social-media{
+      display: none;
+      &.expanded{
+        display: table;
+      }
     }
   }
 }
@@ -59,7 +101,15 @@ nav.navbar.navbar-fixed-top {
 @media screen and (max-width: 600px) {
   nav.navbar{
     .navbar-brand {
-      font-size: 1em;
+      font-size: $title-font-size;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav.navbar{
+    .navbar-brand {
+      font-size: $lead-font-size;
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "title": "IT Billionaires Map",
+  "title": "An IT Billionaires Map",
   "subtitle":"An interactive data visualization built with D3.js",
-  "live_site": "http://clairesun.com/billionaires/",
+  "live_site": "https://clairesunstudio.github.io/billionaires/IT.html",
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "As part of a multi-faceted effort to combat the opioid epidemic, Chapter 55 of the Acts of 2015 was passed by the Legislature and signed into law by Governor Baker. MassIT worked closely with DPH on visualizing the datasets and created an interactive data story to engage the public on this subject. As the designer and developer of this project, I worked closely with the data team from concept sketching, designing data visualizations, prototyping, developing into the final deployment and performance analytics."
+        "This project is an interactive data visualization I created to experient giving people an intuitive way to explore IT billionaire distribution around the world based on two dimensions: time and location. Using D3.js I compiled data from Forbes and created interactive linked visualizations linked. The map demonstrated where information technology had emerged in and is still dominated by US, as well as an emerging new billionaires in other countries like China in the recent decades. Users can use the timeline slider scroll over countries and view the amount of billionaires that reside in the country in both the world map and a ranking bar chart. When hover on the map bubbles, the names of IT billionaires of the country are rendered in a list."
       ]
     }
   ]

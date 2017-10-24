@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation'
+import Footer from './Footer'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
@@ -30,12 +31,12 @@ import * as projectData from './Data/projectData.js';
               <Navigation />
                 <Switch>
                   <Route path={`/about`} component={About}/>
-                  <Route path={`/contact`} component={Contact}/>
                    <Route path={`/:projectId`} render={(props) => (
                     <Project {...props} projectData={data} />
                   )}/>
                   <Route path={`/`} component={Home}/>
                 </Switch>
+                <Footer />
             </div>
           </Router>
         );
