@@ -8,6 +8,7 @@ import DonutChart from './resume/DonutChart'
 import TagPill from './resume/TagPill'
 import { Timeline, TimelineEvent } from './resume/Timeline'
 import Icon from './resume/Icon'
+import { Button } from 'react-bootstrap'
 
 
 
@@ -26,6 +27,7 @@ export default class About extends React.Component {
             <div className="profile_pic" style={profileStyle}></div>
             <h2>Minghua Sun</h2>
             <h4>UI/UX/Data Visualization Designer Developer</h4>
+            <Button bsStyle='primary' href="assets/minghua-resume.pdf" download="Minghua's Resume">Download PDF</Button>
             <ul className="info_list">
             <li><Icon name='phone'/> +1 (617) 834-1062</li>
             <li><Icon name='location'/> Boston, MA</li>
