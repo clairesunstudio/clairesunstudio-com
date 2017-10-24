@@ -4,6 +4,7 @@ import './About.css'
 import SkillCloud from './resume/SkillCloud'
 import MyTimeline from './resume/MyTimeline'
 import SectionHeader from './resume/SectionHeader'
+import DonutChart from './resume/DonutChart'
 import TagPill from './resume/TagPill'
 import Timeline from './resume/Timeline'
 
@@ -34,6 +35,7 @@ export default class About extends React.Component {
             <SectionHeader>SkillCloud</SectionHeader>
             <SkillCloud/>
             <SectionHeader>ADOBE proficiency</SectionHeader>
+            <DonutChart/>
             <SectionHeader>languages</SectionHeader>
             <TagPill />
           </Col>
