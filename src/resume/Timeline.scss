@@ -42,6 +42,9 @@
       .timeline_event-content{
         position: relative;
         margin-left: 10px;
+        .timeline_event-content-url{
+          margin: 0 0 20px;
+        }
       }
     }
     &:first-child{

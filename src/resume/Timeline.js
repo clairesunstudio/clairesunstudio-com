@@ -1,7 +1,7 @@
 import React from 'react'
 import './Timeline.css'
 
-export const TimelineEvent = ({title, address, date, children}) => {
+export const TimelineEvent = ({title, sub, url, project, date, children}) => {
   const formatDate = (date) => {
     if (typeof(date)==='string'){
       return date
@@ -16,8 +16,16 @@ export const TimelineEvent = ({title, address, date, children}) => {
           <div className="timeline_event-date">{formatDate(date)}</div>
             <div className="timeline_event-icon"></div>
             <div className="timeline_event-content">
-            <h4>{title}</h4>
-            <address>{address}</address>
+            <h4>{
+              project?<a href={project}><span>{title}</span></a>:<span>{title}</span>
+
+            }</h4>
+
+            <p className="timeline_event-content-url">{
+              url?<a href={url}><span>{sub}</span></a>:<span>{sub}</span>
+
+            }</p>
+
             {children}
             </div>
           </div>

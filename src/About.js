@@ -46,15 +46,15 @@ export default class About extends React.Component {
           <SectionHeader>Education<Icon name='education'/></SectionHeader>
               <Timeline>
                 <TimelineEvent title="Graduate Certificate in Interactive Design"
-                               address="Dynamic Media Institute, MassArt, Boston, MA"
+                               sub="Dynamic Media Institute, MassArt, Boston, MA"
                                date="May 2015">
                 </TimelineEvent>
                 <TimelineEvent title="Interactive Environment Group"
-                               address="MIT Media Lab, Cambridge, MA"
+                               sub="MIT Media Lab, Cambridge, MA"
                                date="May 2015">
                 </TimelineEvent>
                 <TimelineEvent title="B.S. in Applied Mathematics, B.A. in Graphic Design"
-                               address="New England College, Henniker, NH"
+                               sub="New England College, Henniker, NH"
                                date="May 2013">
                                <ul>
                                 <li> Magna Cum Laude Graduate, GPA: 3.77/4.0</li>
@@ -67,7 +67,7 @@ export default class About extends React.Component {
           <SectionHeader>Experience<Icon name='job'/></SectionHeader>
               <Timeline>
                 <TimelineEvent title="UI/UX Designer & Developer"
-                               address="Digital Services, EOTSS, Commonwealth of Massachusetts"
+                               sub="Digital Services, EOTSS, Commonwealth of Massachusetts"
                                date={["Present","May 2015"]}>
                                <ul>
                                 <li> UI/UX design, web front end development</li>
@@ -77,7 +77,7 @@ export default class About extends React.Component {
                                </ul>
                 </TimelineEvent>
                 <TimelineEvent title="Visual Designer"
-                               address="Confucius Institute, UMass Boston"
+                               sub="Confucius Institute, UMass Boston"
                                date={["Mar. 2014","June 2015"]}>
                                <ul>
                                 <li> Design and create promotional collateral</li>
@@ -85,7 +85,7 @@ export default class About extends React.Component {
                                </ul>
                 </TimelineEvent>
                 <TimelineEvent title="Web/Graphic Designer"
-                               address="StudentUniverse, Waltham"
+                               sub="StudentUniverse, Waltham"
                                date={["May 2014","Oct 2014"]}>
                                <ul>
                                 <li> Assist in the wire-framing and front-end design of company’s new website</li>
@@ -94,21 +94,24 @@ export default class About extends React.Component {
                                </ul>
                 </TimelineEvent>
                 <TimelineEvent title="Design Internship"
-                               address=" NH Division of Economic Development, Concord, NH"
+                               sub=" NH Division of Economic Development, Concord, NH"
                                date={["Feb. 2014","Sep. 2013"]}>
                 </TimelineEvent>
               </Timeline>
           <SectionHeader>Projects<Icon name='project'/></SectionHeader>
           <Timeline>
             <TimelineEvent title="The ABCs of High School Success"
-                           address="Mass.gov/SuccessABCs"
+                           sub="Mass.gov/SuccessABCs"
+                           project="dese"
+                           url="http://mass.gov/Chapter55"
                            date={["Launched","Oct. 2017"]}>
                           <p>
                           I worked closely with the Department of Education and Secondary Education on developing this interactive data story to highlight the impact of the ABCs by following a group of students from the time they entered 9th grade, to when each left or completed high school. In this project, my work includes storyboading with exisiting data, data visualization design, prototyping, website development and deployment and user testing. The site was built using React with a highly componentized front end and a light weight page load.
                           </p>
             </TimelineEvent>
             <TimelineEvent title="Redesigning Mass.gov"
-                           address="Mass.gov"
+                           sub="Mass.gov"
+                           url="http://mass.gov/Chapter55"
                            date={["Launched","Sept. 2017"]}>
                            <ul>
                             <li> Work on design and front end development of the new Mass.gov and its design system 'Mayflower'</li>
@@ -119,21 +122,24 @@ export default class About extends React.Component {
                            </ul>
             </TimelineEvent>
             <TimelineEvent title="Chapter 55"
-                           address="Mass.gov/Chapter55"
+                           sub="Mass.gov/Chapter55"
+                           project="chapter55"
+                           url="http://mass.gov/Chapter55"
                            date={["Launched","Dec. 2016"]}>
                           <p>
                           As the designer and developer of this interactive data story on the MA opioid epidemic, I worked from concept sketching, data visualization designing, prototyping, and iterating, into the final deployment. The code repository was also made public as the pilot project of Mass.gov’s open-source initiative. This project received the Innovation in Data Science Award at the Massachusetts Digital Government Summit 2017.
                           </p>
             </TimelineEvent>
             <TimelineEvent title="Artificial Bioluminescence"
-                           address="A sensory lighting installation exhibited at the Boston CyberArts Gallery"
+                           project="freshmedia1"
+                           sub="A sensory lighting installation exhibited at the Boston CyberArts Gallery"
                            date="April 2015">
             </TimelineEvent>
           </Timeline>
           <SectionHeader>volunteer<Icon name='volunteer'/></SectionHeader>
           <Timeline>
             <TimelineEvent title="Bright & Beautiful (有灵且美)"
-                           address="Design Director, Facebook Admin"
+                           sub="Design Director, Facebook Admin"
                            date="April 2015">
             </TimelineEvent>
           </Timeline>
