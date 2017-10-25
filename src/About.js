@@ -28,11 +28,11 @@ export default class About extends React.Component {
             <h4>UI/UX/Data Visualization Designer Developer</h4>
             <Button bsStyle='primary' href="assets/minghua-resume.pdf" download="Minghua's Resume">Download PDF</Button>
             <ul className="info_list">
-            <li><Icon name='phone'/> +1 (617) 834-1062</li>
+            <li><Icon name='phone'/><a href="tel:6178341062"> <span>+1 (617) 834-1062</span></a></li>
             <li><Icon name='location'/> Boston, MA</li>
-            <li><Icon name='website'/> clairesun.com</li>
-            <li><Icon name='email'/> clairesunstudio@gmail.com</li>
-            <li><Icon name='github'/> @clairesunstudio</li>
+            <li><Icon name='website'/><a href="http://www.clairesun.com"> <span>clairesun.com</span></a></li>
+            <li><Icon name='email'/><a href="mailto:clairesunstudio@gmail.com"> <span>clairesunstudio@gmail.com</span></a></li>
+            <li><Icon name='github'/><a href="https://github.com/clairesunstudio"> <span>@clairesunstudio</span></a></li>
             </ul>
             <SectionHeader>Design Tools proficiency</SectionHeader>
             <DonutChart/>
@@ -122,7 +122,7 @@ export default class About extends React.Component {
                            address="Mass.gov/Chapter55"
                            date={["Launched","Dec. 2016"]}>
                           <p>
-                          As the designer and developer of this interactive data story on the MA opioid epidemic, I worked from concept sketching, data visualization designing, prototyping, and iterating, into the final deployment. The code repository was also made public as the pilot project of Mass.gov’s open-source initiative.
+                          As the designer and developer of this interactive data story on the MA opioid epidemic, I worked from concept sketching, data visualization designing, prototyping, and iterating, into the final deployment. The code repository was also made public as the pilot project of Mass.gov’s open-source initiative. This project received the Innovation in Data Science Award at the Massachusetts Digital Government Summit 2017.
                           </p>
             </TimelineEvent>
             <TimelineEvent title="Artificial Bioluminescence"

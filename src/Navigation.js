@@ -56,7 +56,7 @@ class Header extends React.Component {
           </Navbar.Brand>
         </Navbar.Header>
           <Nav pullRight>
-            <li><Link to="/about">Resume</Link></li>
+            <li><Link to="/about"><span>Resume</span></Link></li>
             <li className="social-media-collapsed" onClick={()=>this.onConnectClick()}><a>Connect</a></li>
             <SocialMedia socialIconStyle={socialIconStyle} socialIconColor={socialIconColor} collapsed={connect}/>
           </Nav>

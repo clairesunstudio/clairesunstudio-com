@@ -30,6 +30,32 @@ nav.navbar {
     a{
       color: $color-gray-darker;
       padding: 10px;
+      text-decoration: none;
+      color: inherit;
+          span {
+            text-align: center;
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              width: 0px;
+              height: 2px;
+              transition: all ease-in-out 0.3s;
+              opacity: 0;
+              left: 0;
+              background-color: $color-black;
+            }
+          }
+      &:hover {
+          cursor: pointer;
+          span {
+            &:after {
+              width: 100%;
+              opacity: 1;
+            }
+          }
+        }
     }
   }
 }
