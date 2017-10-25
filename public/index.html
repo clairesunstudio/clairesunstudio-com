@@ -7,6 +7,7 @@
     <meta name="description" content="Minghua Sun's Portfolio Site">
     <meta name="keywords" content="Design,Web Development,Data Visualization,Art,Porfolio">
     <meta name="author" content="Minghua Sun">
+    <title>Claire Sun Studio</title>
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -31,7 +32,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Claire Sun Studio</title>
+
+    <!-- Facebook Open-graph metadata -->
+    <meta property="og:title" content="Claire Sun Studio" />
+    <meta property="og:description" content="Minghua Sun's Portfolio Site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://clairesun.com" />
+    <meta property="fb:admins" content="1266533259" />
+    <meta property="fb:app_id" content="1951554915084762" />
+    <meta property="og:image" content="http://clairesun.com/assets/cover.png" />
+    <!-- End Facebook Open-graph metadata -->
+    <!-- Twitter Summary Card metadata -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@iamclairesun" />
+    <meta name="twitter:title" content="Claire Sun Studio" />
+    <meta name="twitter:description" content="Minghua Sun's Portfolio Site" />
+    <meta name="twitter:image" content="http://clairesun.com/assets/cover.png" />
+    <!-- End Twitter Summary Card metadata -->
+
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -41,6 +59,27 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1951554915084762',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
