@@ -1,7 +1,7 @@
 @import 'styles/_variables.scss';
 
 .gridItem{
-    box-shadow: 0 0 1.25em 0 rgba($color-gray,.2);
+   box-shadow: 0 0 0.5em 0 rgba($color-gray,.2);
    background-size: cover;
    width: 100%;
    height: 100%;
@@ -28,8 +28,9 @@
      }
    }
   &:hover, &.hover {
-   box-shadow: 0 0 3em 0 rgba($color-gray,.7);
+   box-shadow: 0 0 2em 0 rgba($color-gray-dark,1);
    filter: grayscale(100%);
+   transition: all 0.3s ease-in-out;
    .gridItem__cover {
     visibility: visible;
     background-color: rgba(0,0,0,.8);

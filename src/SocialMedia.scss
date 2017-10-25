@@ -1,17 +1,20 @@
 @import './styles/_variables.scss';
 
-.social-media{
-  display: inline-block;
-  @media screen and (max-width: 911px) {
-    text-align: center;
-  }
-}
-.social-icon:hover {
-  transform: scale(1.1);
-}
-
-.nav{
   .social-media{
-      margin-top: 7px;
+      display: inline-block;
+      @media screen and (max-width: 911px) {
+        text-align: center;
+      }
+      .social-icon{
+        svg{
+          top: 50% !important;
+          left: 50% !important;
+          transform: translate(-50%, -50%) !important;
+        }
+        &:hover {
+          transform: scale(1.2);
+          transition: transform 0.5s ease-in-out;
+        }
+      }
+
   }
-}
