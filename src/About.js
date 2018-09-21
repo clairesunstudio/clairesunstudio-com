@@ -25,7 +25,8 @@ export default class About extends React.Component {
           <Col md={5} className="about">
             <div className="profile_pic" style={profileStyle}></div>
             <h2>Minghua Sun</h2>
-            <h4>UI/UX/Data Visualization Designer Developer</h4>
+            <h4>Creative Technologist, UX Designer/Developer </h4>
+            <p>I wear many hats in different projects, from playing the UI/UX designer, React developer roles, to doing data analytics and making data visualization. I&apos;m the Product Owner of the Commonwealth Design System and I sometimes PM technical projects.</p>
             <Button bsStyle='primary' href="assets/minghua-resume.pdf" download="Minghua's Resume">Download PDF</Button>
             <ul className="info_list">
             <li><Icon name='phone'/><a href="tel:6178341062"> <span>+1 (617) 834-1062</span></a></li>
