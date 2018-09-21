@@ -1,0 +1,17 @@
+{
+  "title": "Rideshare in Massachussets Data Report",
+  "subtitle":"An interative data story built for Massachusetts Department of Public Health on the opioid epidemic",
+  "live_site":"http://www.mass.gov/rideshare",
+  "sections": [
+    { "section": "Overview",
+      "paragraphs": [
+        "I worked closely with the data team and the Department of Public Health on visualizing the statistics of opioid usage in Massachusetts and created an interactive data story to engage the public on this subject. In this project, my work includes concept sketching, data visualization design, prototyping, website development and deployment. I also conducted user and accessibility testing to meet the 508 compliance."
+      ]
+    },
+    { "section": "Background",
+      "paragraphs": [
+        "In August 2016, Governor Baker signed legislation related to ridesharing companies, also known as transportation network companies (TNCs). Part of that legislation helped Massachusetts start collecting data about ridesharing service from TNCs. Below, you’ll find an interactive summary of the data. You can also explore how people in your city or town are using rideshare services and learn how population density, age, and other factors impact rideshare activity."
+      ]
+    }
+  ]
+}

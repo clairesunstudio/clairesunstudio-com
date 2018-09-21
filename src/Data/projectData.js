@@ -61,6 +61,7 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"dese.jpg"},
           {"type":"file","name":"dese_district.png"},
           {"type":"file","name":"dese_grade11.png"},
           {"type":"file","name":"dese_grade9.png"}
@@ -157,6 +158,14 @@ module.exports =
         ]}
       ]}
     ]},
+    {"type":"directory","name":"mayflower","contents":[
+      {"type":"file","name":"content.json"},
+      {"type":"directory","name":"media","contents":[
+        {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"rideshare.jpg"}
+        ]}
+      ]}
+    ]},
     {"type":"directory","name":"mdd","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
@@ -180,6 +189,14 @@ module.exports =
       ]}
     ]},
     {"type":"directory","name":"rideshare","contents":[
+      {"type":"file","name":"content.json"},
+      {"type":"directory","name":"media","contents":[
+        {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"rideshare.jpg"}
+        ]}
+      ]}
+    ]},
+    {"type":"directory","name":"search","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
@@ -235,5 +252,5 @@ module.exports =
       ]}
     ]}
   ]},
-  {"type":"report","directories":65,"files":103}
+  {"type":"report","directories":71,"files":108}
 ]

@@ -5,8 +5,8 @@ module.exports =
   "description": "A commonwealth design system",
   "category": ["UI", "UX", "design", "web", "development"]
 }, {
-  "url": "Search Mass.gov",
-  "name": "search",
+  "url": "search",
+  "name": "Search Mass.gov",
   "description": "The search application powering Mass.gov",
   "category": ["UI", "UX", "design", "web", "development"]
 }, {
