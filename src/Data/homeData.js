@@ -12,7 +12,7 @@ module.exports =
 }, {
   "url": "rideshare",
   "name": "rideshare",
-  "description": "An interative data story built for Massachusetts Department of Transportation on the rideshare data",
+  "description": "An interative data story built for Massachusetts Department of Public Utilities on the rideshare data",
   "category": ["data visualization", "UI", "UX", "design", "web", "development"]
 }, {
   "url": "chapter55",

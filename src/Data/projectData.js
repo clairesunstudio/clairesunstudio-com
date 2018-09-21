@@ -1,4 +1,4 @@
-module.exports =
+module.exports = 
 [
   {"type":"directory","name":"public/projects","contents":[
     {"type":"directory","name":"BGPS","contents":[
@@ -179,6 +179,14 @@ module.exports =
         {"type":"file","name":"stayInformed.jpg"}
       ]}
     ]},
+    {"type":"directory","name":"rideshare","contents":[
+      {"type":"file","name":"content.json"},
+      {"type":"directory","name":"media","contents":[
+        {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"rideshare.jpg"}
+        ]}
+      ]}
+    ]},
     {"type":"directory","name":"selfie","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
@@ -227,5 +235,5 @@ module.exports =
       ]}
     ]}
   ]},
-  {"type":"report","directories":62,"files":101}
+  {"type":"report","directories":65,"files":103}
 ]
