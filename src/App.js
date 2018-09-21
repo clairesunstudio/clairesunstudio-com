@@ -3,7 +3,6 @@ import Navigation from './Navigation'
 import Footer from './Footer'
 import Home from './Home'
 import About from './About'
-import Contact from './Contact'
 import Project from './Project'
 import _ from 'lodash'
 import {
