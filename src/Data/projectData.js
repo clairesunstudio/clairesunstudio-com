@@ -1,5 +1,6 @@
 module.exports =
-[{"type":"directory","name": ".","contents":[
+[
+  {"type":"directory","name":"public/projects","contents":[
     {"type":"directory","name":"BGPS","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
@@ -74,7 +75,6 @@ module.exports =
         ]},
         {"type":"file","name":"pattern1.jpg"},
         {"type":"file","name":"pattern2.jpg"},
-        {"type":"file","name":"pattern3.jpg"},
         {"type":"file","name":"poster2.jpg"},
         {"type":"file","name":"poster4.jpg"}
       ]}
@@ -227,5 +227,5 @@ module.exports =
       ]}
     ]}
   ]},
-  {"type":"report","directories":62,"files":102}
+  {"type":"report","directories":62,"files":101}
 ]
