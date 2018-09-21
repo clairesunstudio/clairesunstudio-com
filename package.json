@@ -25,7 +25,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "npm run build&&gh-pages -d build",
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build-css": "node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
