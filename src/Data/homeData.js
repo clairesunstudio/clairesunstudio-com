@@ -5,13 +5,18 @@ module.exports =
   "description": "A commonwealth design system",
   "category": ["UI", "UX", "design", "web", "development"]
 }, {
+  "url": "childcare",
+  "name": "Child Care Program Search",
+  "description": "The search application powering Mass.gov",
+  "category": ["UI", "UX", "design", "web", "development"]
+}, {
   "url": "search",
   "name": "Search Mass.gov",
   "description": "The search application powering Mass.gov",
   "category": ["UI", "UX", "design", "web", "development"]
 }, {
   "url": "rideshare",
-  "name": "rideshare",
+  "name": "Rideshare in Massachusetts",
   "description": "An interative data story built for Massachusetts Department of Public Utilities on the rideshare data",
   "category": ["data visualization", "UI", "UX", "design", "web", "development"]
 }, {

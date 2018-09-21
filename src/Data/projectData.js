@@ -57,6 +57,14 @@ module.exports =
         {"type":"file","name":"prescription-decline.gif"}
       ]}
     ]},
+    {"type":"directory","name":"childcare","contents":[
+      {"type":"file","name":"content.json"},
+      {"type":"directory","name":"media","contents":[
+        {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"rideshare.jpg"}
+        ]}
+      ]}
+    ]},
     {"type":"directory","name":"dese","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
@@ -252,5 +260,5 @@ module.exports =
       ]}
     ]}
   ]},
-  {"type":"report","directories":71,"files":108}
+  {"type":"report","directories":74,"files":110}
 ]
