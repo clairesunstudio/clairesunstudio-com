@@ -1,6 +1,6 @@
 {
-  "title": "Rideshare in Massachussets Data Report",
-  "subtitle":"An interative data story built for Massachusetts Department of Public Health on the opioid epidemic",
+  "title": "Search Mass.gov",
+  "subtitle":"The search application powering Mass.gov",
   "live_site":"http://www.mass.gov/rideshare",
   "sections": [
     { "section": "Overview",

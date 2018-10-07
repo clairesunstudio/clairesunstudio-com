@@ -1,7 +1,7 @@
 {
-  "title": "Rideshare in Massachussets Data Report",
-  "subtitle":"An interative data story built for Massachusetts Department of Public Health on the opioid epidemic",
-  "live_site":"http://www.mass.gov/rideshare",
+  "title": "Child Care Program Search",
+  "subtitle":"A Geolocation search for the Massachusetts Child Care Programs",
+  "live_site":"",
   "sections": [
     { "section": "Overview",
       "paragraphs": [
