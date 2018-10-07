@@ -2,18 +2,18 @@ module.exports =
 [{
   "url": "mayflower",
   "name": "Mayflower Design System",
-  "description": "A commonwealth design system",
-  "category": ["UI", "UX", "design", "web", "development"]
+  "description": "From Mass.gov Front-end framework to the Commonwealth Design System",
+  "category": ["UI", "UX", "design", "web", "development", "API"]
 }, {
   "url": "childcare",
   "name": "Child Care Program Search",
-  "description": "The search application powering Mass.gov",
-  "category": ["UI", "UX", "design", "web", "development"]
+  "description": "A Geolocation search for the Massachusetts Child Care Programs",
+  "category": ["UI", "UX", "design", "web", "development", "API"]
 }, {
   "url": "search",
   "name": "Search Mass.gov",
   "description": "The search application powering Mass.gov",
-  "category": ["UI", "UX", "design", "web", "development"]
+  "category": ["UI", "UX", "design", "web", "development", "API"]
 }, {
   "url": "rideshare",
   "name": "Rideshare in Massachusetts",
@@ -30,21 +30,6 @@ module.exports =
   "description": "A data story exploring long-term impacts of high school attendance, behavior, and course performance.",
   "category": ["data visualization", "UI", "UX", "design", "web", "development"]
 }, {
-  "url": "fashion",
-  "name": "The Fashion of Hitchcock’s 7 leading ladies",
-  "description": "Proof of concept prototype for visualizing fashion in classic movies",
-  "category": ["data visualization", "prototype"]
-}, {
-  "url": "billionaire",
-  "name": "An IT Billionaires Map",
-  "description": "An interactive data visualization built with D3.js",
-  "category": ["data visualization", "prototype"]
-}, {
-  "url": "map",
-  "name": "The Massart-MFA Map",
-  "description": "A map design driven by user research and testing",
-  "category": ["design", "UX"]
-}, {
   "url": "freshmedia1",
   "name": "fresh media Part I",
   "description": "Sensor Light Installation at the Fresh Media Show",
@@ -54,25 +39,20 @@ module.exports =
   "name": "fresh media Part II",
   "description": "Sensor Light Installation at the Fresh Media Show",
   "category": ["sensor", "installation", "art"]
+},{
+  "url": "bnbcards",
+  "name": "The Story T and PostCard Project",
+  "description": "Design for the non-profit project empowering young embroideress in rural China",
+  "category": ["branding", "design", "marketing"]
 }, {
   "url": "bnbgirls",
   "name": "The Story of Bright & Beautiful Girls",
   "description": "Storytelling using parallax animation",
   "category": ["design", "prototype", "web"]
-}, {
-  "url": "facebookfan",
-  "name": "The Facebook Fan",
-  "description": "Multi sensory experience designed to show media approval",
-  "category": ["interative", "installation", "prototype"]
-}, {
+},{
   "url": "yes",
   "name": "Young Workers Safety",
   "description": "A marketing campaign raising awareness of young workers safety and rights",
-  "category": ["branding", "design", "marketing"]
-}, {
-  "url": "bnbcards",
-  "name": "The Story T and PostCard Project",
-  "description": "Design for the non-profit project empowering young embroideress in rural China",
   "category": ["branding", "design", "marketing"]
 }, {
   "url": "ssss",
@@ -89,6 +69,26 @@ module.exports =
   "name": "Ready MA",
   "description": "A marketing campaign for MEMA hurricane preparedness month",
   "category": ["design", "marketing"]
+},{
+  "url": "facebookfan",
+  "name": "The Facebook Fan",
+  "description": "Multi sensory experience designed to show media approval",
+  "category": ["interative", "installation", "prototype"]
+}, {
+  "url": "fashion",
+  "name": "The Fashion of Hitchcock’s 7 leading ladies",
+  "description": "Proof of concept prototype for visualizing fashion in classic movies",
+  "category": ["data visualization", "prototype"]
+}, {
+  "url": "billionaire",
+  "name": "An IT Billionaires Map",
+  "description": "An interactive data visualization built with D3.js",
+  "category": ["data visualization", "prototype"]
+}, {
+  "url": "map",
+  "name": "The Massart-MFA Map",
+  "description": "A map design driven by user research and testing",
+  "category": ["design", "UX"]
 }, {
   "url": "draw",
   "name": "Generative Drawings",
@@ -109,12 +109,14 @@ module.exports =
   "name": "Selfie Identifier",
   "description": "A web app uses uses Face++ API to tag instagram selfies ",
   "category": ["web", "prototype"]
-}, {
-  "url": "BGPS",
-  "name": "Branding and Logo Design",
-  "description": "Logo design for Boston Group for Psychoanalytic Studies",
-  "category": ["branding", "design"]
-}, {
+},
+// {
+//   "url": "BGPS",
+//   "name": "Branding and Logo Design",
+//   "description": "Logo design for Boston Group for Psychoanalytic Studies",
+//   "category": ["branding", "design"]
+// },
+{
   "url": "jewelry",
   "name": "Jewelry",
   "description": "Triptych (oil, newsprint on wood panels )",
