@@ -1,16 +1,16 @@
 {
   "title": "Search Mass.gov",
   "subtitle":"The search application powering Mass.gov",
-  "live_site":"http://www.mass.gov/rideshare",
+  "live_site":"https://search.mass.gov",
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "I worked closely with the data team and the Department of Public Health on visualizing the statistics of opioid usage in Massachusetts and created an interactive data story to engage the public on this subject. In this project, my work includes concept sketching, data visualization design, prototyping, website development and deployment. I also conducted user and accessibility testing to meet the 508 compliance."
+        "Google announced that they were sunseting its site search product (GSS) at the end of March 2017, which Mass.gov Drupal site was relying on for its internal site search. In 3 months, we must come up with a solution to ensure that over 300k daily searches on Mass.gov were not disrupted, in addition, aimed to address the requests from all stakeholders within the Mass.gov customer organizations, and to improve the constituents experience to quickly and easily find the content they are looking for."
       ]
     },
-    { "section": "Background",
+    { "section": "My Roles",
       "paragraphs": [
-        "In August 2016, Governor Baker signed legislation related to ridesharing companies, also known as transportation network companies (TNCs). Part of that legislation helped Massachusetts start collecting data about ridesharing service from TNCs. Below, you’ll find an interactive summary of the data. You can also explore how people in your city or town are using rideshare services and learn how population density, age, and other factors impact rideshare activity."
+        "I worked both as an architect, a developer and the sole designer on the team, first gathering the requirements and coming up with a design to meet all the business and technical requirements. In the first couple of weeks, I prototyped the search application using React and Redux with Google Custom Search API (CSE) based on the design and initiated the front-end solution that was decoupled from Drupal using React and pointed the direction of building a React component library in storybook for the Mayflower Design System to speed up the development process. From the initial research and design, prototype to development, vendor team management, to conducting user testing and sythesizing feedback for iterations to the final release, I played an integral part in the entire product cycle."
       ]
     }
   ]
