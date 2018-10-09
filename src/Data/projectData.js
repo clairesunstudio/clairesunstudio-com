@@ -170,6 +170,8 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"mayflower-docs.png"},
+          {"type":"file","name":"mayflower-react.png"},
           {"type":"file","name":"mayflower.jpg"}
         ]}
       ]}
@@ -209,7 +211,9 @@ module.exports =
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
           {"type":"file","name":"search.jpg"}
-        ]}
+        ]},
+        {"type":"file","name":"search-news.png"},
+        {"type":"file","name":"search-teasers.png"}
       ]}
     ]},
     {"type":"directory","name":"selfie","contents":[
@@ -260,5 +264,5 @@ module.exports =
       ]}
     ]}
   ]},
-  {"type":"report","directories":74,"files":110}
+  {"type":"report","directories":74,"files":114}
 ]

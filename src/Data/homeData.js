@@ -2,7 +2,7 @@ module.exports =
 [{
   "url": "mayflower",
   "name": "Mayflower Design System",
-  "description": "From Mass.gov Front-end framework to the Commonwealth Design System",
+  "description": "Leading the transition from Mass.gov Front-end framework to the Commonwealth Design System",
   "category": ["UI", "UX", "design", "web", "development", "API"]
 }, {
   "url": "childcare",
