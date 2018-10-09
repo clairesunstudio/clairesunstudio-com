@@ -37,3 +37,10 @@
    }
  }
 }
+
+.btn-project{
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}

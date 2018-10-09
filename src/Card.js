@@ -26,7 +26,7 @@ export default class Card extends React.Component {
                 <div className="gridItem__cover-content">
                   <h3>{name}</h3>
                   <p>{description}</p>
-                  <Link to={`/${url}`}><Button bsStyle="default">Learn More</Button></Link>
+                  <Link to={`/${url}`}><Button className="btn-project">Learn More</Button></Link>
                 </div>
               </div>
             </div>

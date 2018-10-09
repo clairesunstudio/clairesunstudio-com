@@ -5,9 +5,9 @@ import './Header.css'
 
 const LiveSite = ({live_site}) => {
   if (live_site != "") {
-    return <Button href={live_site}>Visit Live Site</Button>
+    return <Button className="btn-project" href={live_site}>Visit Live Site</Button>
   } else {
-    return <div></div>
+    return null
   }
 }
 
