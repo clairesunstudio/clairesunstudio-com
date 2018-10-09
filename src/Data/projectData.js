@@ -61,7 +61,7 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"rideshare.jpg"}
+          {"type":"file","name":"childcare.jpg"}
         ]}
       ]}
     ]},
@@ -170,7 +170,7 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"rideshare.jpg"}
+          {"type":"file","name":"mayflower.jpg"}
         ]}
       ]}
     ]},
@@ -208,7 +208,7 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"rideshare.jpg"}
+          {"type":"file","name":"search.jpg"}
         ]}
       ]}
     ]},
