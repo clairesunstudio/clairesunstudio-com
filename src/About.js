@@ -27,7 +27,7 @@ export default class About extends React.Component {
             <h2>Minghua Sun</h2>
             <h4>Creative Technologist, UX Designer/Developer </h4>
             <p>I wear many hats in different projects, from playing the roles of a UI/UX designer and a React developer, to doing data analytics and making data visualization. I&apos;m the Product Owner of the Commonwealth Design System and I sometimes PM technical projects.</p>
-            <Button bsStyle='primary' href="assets/minghua-resume.pdf" download="Minghua's Resume">Download PDF</Button>
+            <Button bsStyle='tab' href="assets/minghua-resume.pdf" download="Minghua's Resume">Download PDF</Button>
             <ul className="info_list">
             <li><Icon name='phone'/><a href="tel:6178341062"> <span>+1 (617) 834-1062</span></a></li>
             <li><Icon name='location'/> Boston, MA</li>

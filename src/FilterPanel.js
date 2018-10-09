@@ -35,11 +35,11 @@ class FilterPanel extends React.Component{
       return value == filterValue?'active':''
     }
     const FilterList = uniqueCategories.map((category,i) => {
-      return <Button bsStyle="primary" className={isActive(category)} onClick={selectCategory, onFilter} value={category} key={i}>{upperCaseFirstChar(category)}</Button>
+      return <Button bsStyle="tab" className={isActive(category)} onClick={selectCategory, onFilter} value={category} key={i}>{upperCaseFirstChar(category)}</Button>
     })
     return (
       <div className="filter-panel">
-      <Button bsStyle="primary" className={isActive('all')} onClick={resetFilter} value='all'>All</Button>
+      <Button bsStyle="tab" className={isActive('all')} onClick={resetFilter} value='all'>All</Button>
       {FilterList}
       </div>
     )
