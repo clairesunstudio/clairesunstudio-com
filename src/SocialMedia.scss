@@ -19,15 +19,15 @@
 }
 
 nav.navbar {
-  @include social-svg-icons(black, transparent);
+  @include social-svg-icons($color-black, transparent);
   .social-icon:hover{
-    @include social-svg-icons(white, black);
+    @include social-svg-icons($color-white, $color-black);
   }
 }
 
 footer {
-  @include social-svg-icons(white, transparent);
+  @include social-svg-icons($color-white, transparent);
   .social-icon:hover{
-    @include social-svg-icons(black, white);
+    @include social-svg-icons($color-black, $color-white);
   }
 }
