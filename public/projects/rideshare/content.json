@@ -5,12 +5,12 @@
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "I worked closely with the data team and the Department of Public Health on visualizing the statistics of opioid usage in Massachusetts and created an interactive data story to engage the public on this subject. In this project, my work includes concept sketching, data visualization design, prototyping, website development and deployment. I also conducted user and accessibility testing to meet the 508 compliance."
+        "I worked on design and development of the data story, with the data and GIS team on the first-hand data from the rideshare companies on how Massachusetts residents use rideshare services, through exploratory and confirmatory data analysis, combining correlated datasets and data visualizations we highlight the important information and trends and making large data sets easy to consume for the public."
       ]
     },
     { "section": "Background",
       "paragraphs": [
-        "In August 2016, Governor Baker signed legislation related to ridesharing companies, also known as transportation network companies (TNCs). Part of that legislation helped Massachusetts start collecting data about ridesharing service from TNCs. Below, you’ll find an interactive summary of the data. You can also explore how people in your city or town are using rideshare services and learn how population density, age, and other factors impact rideshare activity."
+        "In August 2016, Governor Baker signed legislation related to ridesharing companies, also known as transportation network companies (TNCs). Part of that legislation helped Massachusetts start collecting data about ridesharing service from TNCs."
       ]
     }
   ]

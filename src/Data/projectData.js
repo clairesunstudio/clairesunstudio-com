@@ -60,6 +60,8 @@ module.exports =
     {"type":"directory","name":"childcare","contents":[
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
+        {"type":"file","name":"childcare-details-page.png"},
+        {"type":"file","name":"childcare-search-results.png"},
         {"type":"directory","name":"feature","contents":[
           {"type":"file","name":"childcare.jpg"}
         ]}
@@ -69,7 +71,6 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"dese.jpg"},
           {"type":"file","name":"dese_district.png"},
           {"type":"file","name":"dese_grade11.png"},
           {"type":"file","name":"dese_grade9.png"}
@@ -202,6 +203,8 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
+          {"type":"file","name":"rideshare-population-correlation.png"},
+          {"type":"file","name":"rideshare-speed-by-muni.png"},
           {"type":"file","name":"rideshare.jpg"}
         ]}
       ]}
@@ -264,5 +267,5 @@ module.exports =
       ]}
     ]}
   ]},
-  {"type":"report","directories":74,"files":114}
+  {"type":"report","directories":74,"files":117}
 ]
