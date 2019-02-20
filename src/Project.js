@@ -51,10 +51,12 @@ class Project extends React.Component{
     if( !content ) {
       return <div className="container">Loading...</div>
     }
-    let images = [], features = [], videos = [];
+    let images = [], features = [], videos = [], lightBoxImages = [];
     for(let i = 0; i< imageList.length; i++){
       if(imageList[i] != 'feature'){
-        images.push("projects/"+projectId+"/media/" + imageList[i]);
+        const url = "projects/"+projectId+"/media/" + imageList[i]
+        images.push(url);
+        lightBoxImages.push({ src: url });
       }
     }
     for(let i = 0; i< featureImageList.length; i++){
@@ -65,6 +67,7 @@ class Project extends React.Component{
       videos.push("projects/"+projectId+"/media/video/" + videoList[i]);
     }
     const {title, subtitle, sections, live_site} = content
+    console.log(lightBoxImages)
     return (
         <div className="project">
           <Header title={title} subtitle={subtitle} live_site={live_site}/>
