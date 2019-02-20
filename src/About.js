@@ -31,7 +31,7 @@ export default class About extends React.Component {
             <ul className="info_list">
             <li><Icon name='phone'/><a href="tel:6178341062"> <span>+1 (617) 834-1062</span></a></li>
             <li><Icon name='location'/> Boston, MA</li>
-            <li><Icon name='website'/><a href="http://www.clairesun.com"> <span>clairesun.com</span></a></li>
+            <li><Icon name='website'/><a href="https://clairesunstudio.com"> <span>clairesunstudio.com</span></a></li>
             <li><Icon name='email'/><a href="mailto:clairesunstudio@gmail.com"> <span>clairesunstudio@gmail.com</span></a></li>
             <li><Icon name='github'/><a href="https://github.com/clairesunstudio"> <span>@clairesunstudio</span></a></li>
             </ul>
