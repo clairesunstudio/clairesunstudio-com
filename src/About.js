@@ -75,7 +75,7 @@ export default class About extends React.Component {
               </Timeline>
           <SectionHeader>Experience<Icon name='job'/></SectionHeader>
               <Timeline>
-                <TimelineEvent title="UI/UX Designer & Developer"
+                <TimelineEvent title="UX Designer & Engineer"
                                sub="Digital Services, EOTSS, Commonwealth of Massachusetts"
                                date={["Present","May 2015"]}>
                                <ul>
