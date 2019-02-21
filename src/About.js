@@ -19,24 +19,36 @@ export default class About extends React.Component {
         <header className="header-bar thin"></header>
         <div className="container">
           <Col md={5} className="about">
-            <img className="profile_pic" src="assets/profile-pic.jpg" alt="profile picture" />
-            <h2>Minghua Sun</h2>
-            <h4>Creative Technologist, UX Engineer</h4>
-            <p>I wear many hats in various projects — conducting user research, translating requirements into wireframes, writing and reviewing code, creating data visualizations and venturing into data analytics. I&apos;m the Product Owner of the Commonwealth Design System and I sometimes PM technical projects.</p>
-            <Button bsStyle='tab' href="assets/minghua-resume.pdf" download="Minghua's Resume">Download PDF</Button>
-            <ul className="info_list">
-            <li><Icon name='phone'/><a href="tel:6178341062"> <span>+1 (617) 834-1062</span></a></li>
-            <li><Icon name='location'/> Boston, MA</li>
-            <li><Icon name='website'/><a href="https://clairesunstudio.com"> <span>clairesunstudio.com</span></a></li>
-            <li><Icon name='email'/><a href="mailto:clairesunstudio@gmail.com"> <span>clairesunstudio@gmail.com</span></a></li>
-            <li><Icon name='github'/><a href="https://github.com/clairesunstudio"> <span>@clairesunstudio</span></a></li>
-            </ul>
-            <SectionHeader>Design Tools proficiency</SectionHeader>
-            <DonutChart/>
-            <SectionHeader>SkillCloud</SectionHeader>
-            <SkillCloud/>
-            <SectionHeader>languages</SectionHeader>
-            <TagPill />
+            <div className="about-row">
+              <div className="about-section">
+                <img className="profile_pic" src="assets/profile-pic.jpg" alt="profile picture" />
+                <h2>Minghua Sun</h2>
+                <h4>Creative Technologist, UX Engineer</h4>
+                <p>I wear many hats in various projects — conducting user research, translating requirements into wireframes, writing and reviewing code, creating data visualizations and venturing into data analytics. I&apos;m the Product Owner of the Commonwealth Design System and I sometimes PM technical projects.</p>
+                <Button bsStyle='tab' onClick={() => window.print()} download="Minghua's Resume">Print Resume</Button>
+              </div>
+              <div className="about-section">
+                <ul className="info_list">
+                <li><Icon name='phone'/><a href="tel:6178341062"> <span>+1 (617) 834-1062</span></a></li>
+                <li><Icon name='location'/> Boston, MA</li>
+                <li><Icon name='website'/><a href="https://clairesunstudio.com"> <span>clairesunstudio.com</span></a></li>
+                <li><Icon name='email'/><a href="mailto:clairesunstudio@gmail.com"> <span>clairesunstudio@gmail.com</span></a></li>
+                <li><Icon name='github'/><a href="https://github.com/clairesunstudio"> <span>@clairesunstudio</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="about-section">
+              <SectionHeader>Design Tools proficiency</SectionHeader>
+              <DonutChart/>
+            </div>
+            <div className="about-section">
+              <SectionHeader>SkillCloud</SectionHeader>
+              <SkillCloud/>
+            </div>
+            <div className="about-section">
+              <SectionHeader>languages</SectionHeader>
+              <TagPill />
+            </div>
           </Col>
           <Col md={1} />
           <Col md={6}>

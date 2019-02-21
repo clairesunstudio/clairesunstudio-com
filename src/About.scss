@@ -37,6 +37,22 @@
     display: none;
   }
 
+  .about-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .about-section {
+    flex: 1;
+
+    & + & {
+      padding-left: 20px;
+    }
+  }
+
   .btn.btn-tab{
     display: none;
   }
