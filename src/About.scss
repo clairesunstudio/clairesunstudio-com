@@ -42,10 +42,18 @@
   }
 
   .profile_pic{
-    width: 50px;
+    display: none;
   }
 
   .section-divider-title:before {
     top: 120% !important;
+  }
+
+  .dash_container {
+    width: 68%;
+  }
+
+  a[href]:after {
+    content: none !important;
   }
 }
