@@ -14,16 +14,12 @@ import { Button } from 'react-bootstrap'
 export default class About extends React.Component {
 
   render() {
-    const profileStyle = {
-      backgroundImage: `url('assets/profile-pic.jpg')`
-    };
-
     return (
       <div className="resume_container">
         <header className="header-bar thin"></header>
         <div className="container">
           <Col md={5} className="about">
-            <div className="profile_pic" style={profileStyle}></div>
+            <img className="profile_pic" src="assets/profile-pic.jpg" alt="profile picture" />
             <h2>Minghua Sun</h2>
             <h4>Creative Technologist, UX Engineer</h4>
             <p>I wear many hats in various projects — conducting user research, translating requirements into wireframes, writing and reviewing code, creating data visualizations and venturing into data analytics. I&apos;m the Product Owner of the Commonwealth Design System and I sometimes PM technical projects.</p>

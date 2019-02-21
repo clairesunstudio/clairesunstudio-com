@@ -8,10 +8,9 @@
     padding: 5px 0;
   }
   .profile_pic{
-    background-size: cover;
     height: 180px;
     width: 180px;
-    border-radius: 100%;
+    border-radius: 50%;
   }
   .info_list{
     margin: 30px auto 50px;
@@ -30,5 +29,23 @@
   }
   a{
     color: inherit;
+  }
+}
+
+@media print {
+  nav, header, footer {
+    display: none;
+  }
+
+  .btn.btn-tab{
+    display: none;
+  }
+
+  .profile_pic{
+    width: 50px;
+  }
+
+  .section-divider-title:before {
+    top: 120% !important;
   }
 }
