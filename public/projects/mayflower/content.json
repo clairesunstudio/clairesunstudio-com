@@ -5,12 +5,12 @@
   "sections": [
     { "section": "Overview",
       "paragraphs": [
-        "The goals of Mayflower are: 1) To create a consistent, inclusive user experience and look and feel across the Commonwealth’s discrete and diverse digital ecosystem for the constituents. 2) To allow Digital Services team and its customers efficiently design and build accessible, mobile-friendly and consistent web products using Mayflower as a unified design system."
+        "Digital products are the front door for government agencies nowadays, accounting for more than 80% of the touch points from the general public. An intuitive, accessible, responsive and performant interface will greatly improve the constituents experience with the government. Mayflower is the toolkit that will help Massachussetts state government to quickly and easily design and develop digital products that meet the public expectation. It started as a component library built in Patternlab to support the Mass.gov redesign project and it's evolving to become a more flexible and scalable design system aiming to support many other state web properties."
       ]
     },
     { "section": "My Roles",
       "paragraphs": [
-        "I'm the Product Owner of Mayflower that comes up with the long-term vision and quarterly goals for building it into a design system, leading the transition from a front-end framework for Mass.gov redesign to a Commonwealth Design System that is used to create a single face of government. I'm also working hands-on as a designer auditing and creating desgin principles and as a developer refactoring and writing code for components."
+        "As the Product Owner for Mayflower, I collaborate with developers, project managers and technical architects to establish project roadmap, slate new work, define quarterly goals, and demonstrate values to the leadership. I also directly contribute as a designer and developer — audit and create design principles, write documentation, refactor existing code and add new components. During this time, I piloted the efforts in building the Mayflower React component library with Storybook, starting documentation in Gitbook and converting codebases into a monorepo."
       ]
     }
   ]
