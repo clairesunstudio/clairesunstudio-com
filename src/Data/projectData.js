@@ -213,10 +213,10 @@ module.exports =
       {"type":"file","name":"content.json"},
       {"type":"directory","name":"media","contents":[
         {"type":"directory","name":"feature","contents":[
-          {"type":"file","name":"search.jpg"}
+          {"type":"file","name":"search.png"}
         ]},
-        {"type":"file","name":"search-news.png"},
-        {"type":"file","name":"search-teasers.png"}
+        {"type":"file","name":"rich-results.jpg"},
+        {"type":"file","name":"search-news.png"}
       ]}
     ]},
     {"type":"directory","name":"selfie","contents":[
